@@ -1,0 +1,14 @@
+{
+  "lint": {
+    "exitCode": 0,
+    "output": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> tavyora-concepts@1.2.1-human-rhythm lint\n> eslint .\n\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.1.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.1.0\nnpm notice To update run: npm install -g npm@12.1.0\nnpm notice\n"
+  },
+  "typecheck": {
+    "exitCode": 0,
+    "output": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> tavyora-concepts@1.2.1-human-rhythm typecheck\n> next typegen && tsc --noEmit\n\nGenerating route types...\n\u2713 Types generated successfully\n"
+  },
+  "build": {
+    "exitCode": 0,
+    "output": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> tavyora-concepts@1.2.1-human-rhythm build\n> next build\n\n\u25b2 Next.js 16.3.6 (Turbopack)\n\u2713 Running next.config.ts took 64ms\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 8.0s\n  Running TypeScript ...\n  Finished TypeScript in 9.2s ...\n  Collecting page data using 8 workers ...\n  Generating static pages using 8 workers (0/12) ...\n  Generating static pages using 8 workers (3/12) \n  Generating static pages using 8 workers (6/12) \n  Generating static pages using 8 workers (9/12) \n\u2713 Generating static pages using 8 workers (12/12) in 849ms\n  Finalizing page optimization ...\n\nRoute (app)\n\u250c \u25cb /\n\u251c \u25cb /_not-found\n\u251c \u25cb /about\n\u251c \u25cb /contact\n\u251c \u25cb /icon.svg\n\u251c \u25cb /privacy\n\u251c \u25cb /robots.txt\n\u251c \u25cb /sitemap.xml\n\u251c \u25cb /technology\n\u251c \u25cb /terms\n\u2514 \u25cb /wellbeing\n\n\n\u25cb  (Static)  prerendered as static content\n\n"
+  }
+}

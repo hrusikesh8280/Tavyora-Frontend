@@ -1,0 +1,33 @@
+[
+  {
+    "width": 1440,
+    "passed": true,
+    "developmentWarnings": []
+  },
+  {
+    "width": 1024,
+    "passed": true,
+    "developmentWarnings": []
+  },
+  {
+    "width": 768,
+    "passed": true,
+    "developmentWarnings": []
+  },
+  {
+    "width": 430,
+    "passed": true,
+    "developmentWarnings": []
+  },
+  {
+    "width": 390,
+    "passed": true,
+    "developmentWarnings": [],
+    "axeViolations": 0
+  },
+  {
+    "width": 360,
+    "passed": true,
+    "developmentWarnings": []
+  }
+]

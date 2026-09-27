@@ -1,0 +1,17 @@
+[
+  {
+    "route": "wellbeing",
+    "at": "2026-09-27T05:25:34.462Z",
+    "mode": "single simulated-mobile lab run",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2925.7219999999998,
+    "cls": 0,
+    "totalBytes": 290916,
+    "warnings": []
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "lint": {
+    "command": "bun run lint",
+    "result": "pass"
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "result": "pass",
+    "note": "Bun launcher segfaulted before executing this script; same package script executed with Node/npm."
+  },
+  "build": {
+    "command": "npm run build",
+    "result": "pass",
+    "routes": [
+      "/",
+      "/technology",
+      "/wellbeing",
+      "/about",
+      "/contact",
+      "/privacy",
+      "/terms",
+      "/_not-found"
+    ]
+  },
+  "dependencies": "No version or lockfile changes"
+}

@@ -1,0 +1,150 @@
+.hero {
+  margin-left: var(--inset);
+  padding: 80px 0 56px;
+  border-bottom: 1px solid var(--mineral);
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 88px;
+  border-bottom: 2px solid var(--clay);
+}
+.kicker {
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hero h1 {
+  max-width: 16ch;
+  margin: 24px 0;
+  font-size: clamp(38px, 4.7vw, 68px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+.intro {
+  max-width: 58ch;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.updated {
+  margin-top: 32px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.updated time {
+  margin-left: 12px;
+}
+.reading {
+  margin-left: var(--inset);
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(0, 2.2fr);
+  gap: clamp(32px, 6vw, 96px);
+  padding: 56px 0 100px;
+}
+.index ol {
+  list-style: decimal-leading-zero;
+  padding-left: 24px;
+  margin-top: 20px;
+}
+.index li {
+  padding-left: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.index a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: var(--ink);
+}
+.index a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.body {
+  max-width: 70ch;
+}
+.section {
+  position: relative;
+  padding: 0 0 36px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--mineral);
+  scroll-margin-top: 32px;
+}
+.number {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 11px;
+  color: var(--clay);
+  letter-spacing: 0.1em;
+}
+.section h2 {
+  margin: 0 0 20px;
+  font-weight: 450;
+  font-size: clamp(23px, 2.1vw, 30px);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+.section p,
+.section li {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.section p {
+  margin: 16px 0;
+}
+.section ul {
+  padding-left: 22px;
+}
+.section a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+.section a:hover {
+  color: var(--clay);
+}
+@media (max-width: 900px) {
+  .reading {
+    gap: 32px;
+    grid-template-columns: minmax(160px, 1fr) minmax(0, 2fr);
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    margin-left: 24px;
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .intro {
+    font-size: 16px;
+  }
+  .reading {
+    margin-left: 24px;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+  .index {
+    margin-bottom: 48px;
+  }
+  .index ol {
+    columns: 1;
+  }
+  .section {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+  }
+}

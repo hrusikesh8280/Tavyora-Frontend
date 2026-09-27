@@ -1,0 +1,9 @@
+{
+  "background": "bone #f3efe6",
+  "ratios": {
+    "ink": 12.05,
+    "muted": 5.69,
+    "clay": 5.69
+  },
+  "scope": "Primary semantic text tokens on bone, not every composited state. Axe and manual review complement this calculation."
+}

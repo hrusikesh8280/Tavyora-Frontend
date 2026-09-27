@@ -1,0 +1,175 @@
+{
+  "date": "2026-09-24",
+  "mode": "Production build, simulated mobile, Chromium 153; all 12 refinement measurements retained",
+  "baseline_file": "wellbeing-lighthouse-summary.json",
+  "runs": [
+    {
+      "phase": "initial refinement",
+      "route": "/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2442.6,
+      "tbt_ms": 110,
+      "cls": 0,
+      "transfer_bytes": 240727
+    },
+    {
+      "phase": "initial refinement",
+      "route": "/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2130.84,
+      "tbt_ms": 141,
+      "cls": 0,
+      "transfer_bytes": 240727
+    },
+    {
+      "phase": "initial refinement",
+      "route": "/",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2500.68,
+      "tbt_ms": 170,
+      "cls": 0,
+      "transfer_bytes": 240727
+    },
+    {
+      "phase": "initial refinement",
+      "route": "/technology",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2117.92,
+      "tbt_ms": 114,
+      "cls": 0,
+      "transfer_bytes": 238849
+    },
+    {
+      "phase": "initial refinement",
+      "route": "/technology",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2526.81,
+      "tbt_ms": 198,
+      "cls": 0,
+      "transfer_bytes": 238849
+    },
+    {
+      "phase": "initial refinement",
+      "route": "/technology",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1959.91,
+      "tbt_ms": 97,
+      "cls": 0,
+      "transfer_bytes": 238849
+    },
+    {
+      "phase": "initial refinement",
+      "route": "/wellbeing",
+      "scores": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2700.38,
+      "tbt_ms": 356.0,
+      "cls": 0,
+      "transfer_bytes": 283937
+    },
+    {
+      "phase": "initial refinement",
+      "route": "/wellbeing",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2687.3,
+      "tbt_ms": 59.5,
+      "cls": 0,
+      "transfer_bytes": 283937
+    },
+    {
+      "phase": "initial refinement",
+      "route": "/wellbeing",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2623.46,
+      "tbt_ms": 40.5,
+      "cls": 0,
+      "transfer_bytes": 283937
+    },
+    {
+      "phase": "final Wellbeing",
+      "route": "/wellbeing",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2728.43,
+      "tbt_ms": 69,
+      "cls": 0,
+      "transfer_bytes": 283959
+    },
+    {
+      "phase": "final Wellbeing",
+      "route": "/wellbeing",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1994.09,
+      "tbt_ms": 47.5,
+      "cls": 0,
+      "transfer_bytes": 283959
+    },
+    {
+      "phase": "final Wellbeing",
+      "route": "/wellbeing",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2195.92,
+      "tbt_ms": 40,
+      "cls": 0,
+      "transfer_bytes": 283959
+    }
+  ]
+}

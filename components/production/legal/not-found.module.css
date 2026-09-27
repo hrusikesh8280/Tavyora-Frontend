@@ -1,0 +1,93 @@
+.scene {
+  padding: 80px 0 96px var(--inset);
+  min-height: 68vh;
+}
+.scene h1 {
+  max-width: 12ch;
+  font-weight: 400;
+  font-size: clamp(48px, 7vw, 100px);
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+  margin: 36px 0 24px;
+}
+.scene h1 em {
+  font-family: PlexSerif, Georgia, serif;
+  font-weight: 400;
+}
+.copy {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 45ch;
+}
+.signal {
+  width: 100%;
+  height: clamp(100px, 12vw, 160px);
+  margin: 24px 0;
+  overflow: hidden;
+}
+.signal path {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1.2;
+}
+.base,
+.end {
+  stroke: var(--mineral);
+}
+.trace {
+  stroke: var(--clay);
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: resolve 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.recovery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+}
+.recovery nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.recovery nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-underline-offset: 5px;
+}
+@keyframes resolve {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+:global([data-motion="off"]) .trace {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .trace {
+    animation: none;
+  }
+}
+@media (max-width: 600px) {
+  .scene {
+    padding: 48px 0 64px 24px;
+    min-height: auto;
+  }
+  .scene h1 {
+    font-size: 52px;
+  }
+  .copy {
+    font-size: 16px;
+  }
+  .recovery {
+    display: block;
+  }
+  .recovery nav {
+    margin-top: 20px;
+    gap: 8px 20px;
+  }
+}

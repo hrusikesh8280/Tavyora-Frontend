@@ -1,0 +1,9 @@
+{
+  "public_admin_email": [],
+  "public_development_labels": [],
+  "prototype_imports": [],
+  "credential_patterns": [],
+  "new_public_asset_bytes": 635997,
+  "public_file_count": 26,
+  "notes": "Source-only checks; not a security certification. Local smoke URLs in scripts are intentional."
+}

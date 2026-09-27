@@ -1,0 +1,3527 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/playwright.config.ts",
+    "rootDir": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "production-1440",
+        "name": "production-1440",
+        "testDir": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "production-768",
+        "name": "production-768",
+        "testDir": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "production-390",
+        "name": "production-390",
+        "testDir": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/production.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3108",
+      "url": "http://127.0.0.1:3108",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "about-contact.spec.ts",
+      "file": "about-contact.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "new pages: semantics, metadata, responsive composition and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:46:28.309Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-afd5cda37b3316cecf50",
+          "file": "about-contact.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "enquiry: validation, keyboard, separate values, draft review and fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6059,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:46:39.663Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-760f5390938f9299e6dd",
+          "file": "about-contact.spec.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "five-page navigation and crawlable production routes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5128,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:46:45.749Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-1f72caa5f105d9d2a27e",
+          "file": "about-contact.spec.ts",
+          "line": 159,
+          "column": 5
+        },
+        {
+          "title": "new pages: semantics, metadata, responsive composition and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:49.708Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-fd91f7f7324b93679fc4",
+          "file": "about-contact.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "enquiry: validation, keyboard, separate values, draft review and fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:58.173Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-2d14f7ab99057b5cfcab",
+          "file": "about-contact.spec.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "five-page navigation and crawlable production routes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared navigation regression runs once.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/about-contact.spec.ts",
+                    "line": 163,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 270,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:04.163Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared navigation regression runs once.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/about-contact.spec.ts",
+                        "line": 163,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-04dcb6806b483a9adbb7",
+          "file": "about-contact.spec.ts",
+          "line": 159,
+          "column": 5
+        },
+        {
+          "title": "new pages: semantics, metadata, responsive composition and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7907,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:29.155Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-37fcfa5be96d1066e0ca",
+          "file": "about-contact.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "enquiry: validation, keyboard, separate values, draft review and fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11006,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:37.474Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-3601dbaf5ebfa6048e17",
+          "file": "about-contact.spec.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "five-page navigation and crawlable production routes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared navigation regression runs once.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/about-contact.spec.ts",
+                    "line": 163,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 251,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:48.511Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared navigation regression runs once.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/about-contact.spec.ts",
+                        "line": 163,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-0e2fc9965c0f25a7b530",
+          "file": "about-contact.spec.ts",
+          "line": 159,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "homepage.spec.ts",
+      "file": "homepage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Homepage content, metadata and semantic landmarks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3060,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:46:50.930Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-0cbe17b0cfca45bdffb6",
+          "file": "homepage.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Homepage keyboard, routing and real destinations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:46:54.007Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-1e29bf3392e242de9b21",
+          "file": "homepage.spec.ts",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "title": "Homepage normal, paused and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1931,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:46:58.303Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-3285a8ff7fac3200cb33",
+          "file": "homepage.spec.ts",
+          "line": 142,
+          "column": 5
+        },
+        {
+          "title": "Homepage reflow, focus and touch targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:00.270Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-e8358ddba6dbdb33c2aa",
+          "file": "homepage.spec.ts",
+          "line": 176,
+          "column": 5
+        },
+        {
+          "title": "Homepage axe WCAG scan",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3476,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:02.747Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-146ac1e71dedde7fd0c2",
+          "file": "homepage.spec.ts",
+          "line": 230,
+          "column": 5
+        },
+        {
+          "title": "Homepage initial HTML, sitemap, image and prototype safety",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:06.254Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-e23c9bb2ebf994f7b06a",
+          "file": "homepage.spec.ts",
+          "line": 241,
+          "column": 5
+        },
+        {
+          "title": "Homepage content, metadata and semantic landmarks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2754,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:04.475Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-8a96add1f257ff479fea",
+          "file": "homepage.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Homepage keyboard, routing and real destinations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:07.255Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-ff0a02147afc4081c0c2",
+          "file": "homepage.spec.ts",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "title": "Homepage normal, paused and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1805,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:11.529Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-bd26d9c015534eb4087e",
+          "file": "homepage.spec.ts",
+          "line": 142,
+          "column": 5
+        },
+        {
+          "title": "Homepage reflow, focus and touch targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1371,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:13.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-9bc79aad2b42e9d42cc9",
+          "file": "homepage.spec.ts",
+          "line": 176,
+          "column": 5
+        },
+        {
+          "title": "Homepage axe WCAG scan",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3734,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:14.761Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-694ccfb06a10ae34e10c",
+          "file": "homepage.spec.ts",
+          "line": 230,
+          "column": 5
+        },
+        {
+          "title": "Homepage initial HTML, sitemap, image and prototype safety",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared metadata and HTTP rules need one verification.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/homepage.spec.ts",
+                    "line": 246,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 323,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:18.516Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared metadata and HTTP rules need one verification.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/homepage.spec.ts",
+                        "line": 246,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-48a67d046bee669e46fa",
+          "file": "homepage.spec.ts",
+          "line": 241,
+          "column": 5
+        },
+        {
+          "title": "Homepage content, metadata and semantic landmarks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:48.813Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-836f48652be433b2525d",
+          "file": "homepage.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Homepage keyboard, routing and real destinations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3937,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:50.880Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-0b86eb62906451979b89",
+          "file": "homepage.spec.ts",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "title": "Homepage normal, paused and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1784,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:54.834Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-6f414a2ca25de56b48a2",
+          "file": "homepage.spec.ts",
+          "line": 142,
+          "column": 5
+        },
+        {
+          "title": "Homepage reflow, focus and touch targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1433,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:56.641Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-63e5b8497cf7fcb51746",
+          "file": "homepage.spec.ts",
+          "line": 176,
+          "column": 5
+        },
+        {
+          "title": "Homepage axe WCAG scan",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2973,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:58.101Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-3ea8aaf24fcce9c7ce1d",
+          "file": "homepage.spec.ts",
+          "line": 230,
+          "column": 5
+        },
+        {
+          "title": "Homepage initial HTML, sitemap, image and prototype safety",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared metadata and HTTP rules need one verification.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/homepage.spec.ts",
+                    "line": 246,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 233,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:01.093Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared metadata and HTTP rules need one verification.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/homepage.spec.ts",
+                        "line": 246,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "84e7eb052e8cbae1c9f0-bd63af80260da7513523",
+          "file": "homepage.spec.ts",
+          "line": 241,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "legal.spec.ts",
+      "file": "legal.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "privacy: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4161,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:09.573Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-040cf7df10969603f113",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "terms: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4202,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:13.752Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-d17ab3fadb2ffaa4f0f7",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "this-page-does-not-exist: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3118,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:17.983Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-34f32b7cd0c10813c5af",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "approved routes footer and recovery regression",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2967,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:21.126Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-774c9662534c75f25989",
+          "file": "legal.spec.ts",
+          "line": 91,
+          "column": 5
+        },
+        {
+          "title": "narrow reflow and sitemap",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1536,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:24.117Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-601db15a839a8161c879",
+          "file": "legal.spec.ts",
+          "line": 107,
+          "column": 5
+        },
+        {
+          "title": "privacy: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4163,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:18.871Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-531ac426930c31e50830",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "terms: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3891,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:23.055Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-756b71d95b940a6556bf",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "this-page-does-not-exist: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:26.984Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-cbb1ca95622b7fc2a46d",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "approved routes footer and recovery regression",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2990,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:30.289Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-5fc6d659a78a2d279ddb",
+          "file": "legal.spec.ts",
+          "line": 91,
+          "column": 5
+        },
+        {
+          "title": "narrow reflow and sitemap",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/legal.spec.ts",
+                    "line": 108,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 268,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:33.299Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/legal.spec.ts",
+                        "line": 108,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-da636c084e93c7668409",
+          "file": "legal.spec.ts",
+          "line": 107,
+          "column": 5
+        },
+        {
+          "title": "privacy: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3876,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:01.365Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-d316368f0b89e77b63ee",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "terms: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3645,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:05.263Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-6c606927212fb94a0728",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "this-page-does-not-exist: reading, navigation, metadata, axe and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3076,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:08.930Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-1ad3a595e486efb90892",
+          "file": "legal.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "approved routes footer and recovery regression",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2557,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:12.037Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-fed3610e9694bb24e13b",
+          "file": "legal.spec.ts",
+          "line": 91,
+          "column": 5
+        },
+        {
+          "title": "narrow reflow and sitemap",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/legal.spec.ts",
+                    "line": 108,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 213,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:14.622Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/legal.spec.ts",
+                        "line": 108,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "0fb7d420323fe6d6fc1e-2f5df95de803035e4c72",
+          "file": "legal.spec.ts",
+          "line": 107,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "life-rhythm.spec.ts",
+      "file": "life-rhythm.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Life Rhythm remains deliberate, interruptible and still",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7860,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:25.684Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7500696860db690b844e-d36dcb3536644ec694f9",
+          "file": "life-rhythm.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Desktop chapters follow ordinary scrolling; mobile selection stays explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:33.563Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7500696860db690b844e-200d8ce68239cd2f6905",
+          "file": "life-rhythm.spec.ts",
+          "line": 76,
+          "column": 5
+        },
+        {
+          "title": "Life Rhythm remains deliberate, interruptible and still",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:33.613Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7500696860db690b844e-6f894324888fc84a4433",
+          "file": "life-rhythm.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Desktop chapters follow ordinary scrolling; mobile selection stays explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1449,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:41.411Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7500696860db690b844e-f2a98957b5e59719e703",
+          "file": "life-rhythm.spec.ts",
+          "line": 76,
+          "column": 5
+        },
+        {
+          "title": "Life Rhythm remains deliberate, interruptible and still",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7683,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:14.861Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7500696860db690b844e-f847089051c5992c0383",
+          "file": "life-rhythm.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Desktop chapters follow ordinary scrolling; mobile selection stays explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1536,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:22.566Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7500696860db690b844e-4fa830a599dcc058894b",
+          "file": "life-rhythm.spec.ts",
+          "line": 76,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "production-audit.spec.ts",
+      "file": "production-audit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "production metadata, factual schema, email, assets and removed routes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6031,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('link[rel=\"canonical\"]')\nExpected: \u001b[32m\"https://tavyora.com\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://tavyora.com\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('link[rel=\"canonical\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('link[rel=\"canonical\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <link rel=\"canonical\" href=\"https://tavyora.com\"/>\u001b[22m\n\u001b[2m       - unexpected value \"https://tavyora.com\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('link[rel=\"canonical\"]')\nExpected: \u001b[32m\"https://tavyora.com\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://tavyora.com\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('link[rel=\"canonical\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('link[rel=\"canonical\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <link rel=\"canonical\" href=\"https://tavyora.com\"/>\u001b[22m\n\u001b[2m       - unexpected value \"https://tavyora.com\"\u001b[22m\n\n    at /workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts:27:57",
+                    "location": {
+                      "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts",
+                      "column": 57,
+                      "line": 27
+                    },
+                    "snippet": "  25 |     descriptions.add(description!);\n  26 |     await expect(page.locator(\"h1\")).toHaveCount(1);\n> 27 |     await expect(page.locator('link[rel=\"canonical\"]')).toHaveAttribute(\n     |                                                         ^\n  28 |       \"href\",\n  29 |       `https://tavyora.com${route}`,\n  30 |     );"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts",
+                        "column": 57,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('link[rel=\"canonical\"]')\nExpected: \u001b[32m\"https://tavyora.com\u001b[7m/\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://tavyora.com\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('link[rel=\"canonical\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('link[rel=\"canonical\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <link rel=\"canonical\" href=\"https://tavyora.com\"/>\u001b[22m\n\u001b[2m       - unexpected value \"https://tavyora.com\"\u001b[22m\n\n\n  25 |     descriptions.add(description!);\n  26 |     await expect(page.locator(\"h1\")).toHaveCount(1);\n> 27 |     await expect(page.locator('link[rel=\"canonical\"]')).toHaveAttribute(\n     |                                                         ^\n  28 |       \"href\",\n  29 |       `https://tavyora.com${route}`,\n  30 |     );\n    at /workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts:27:57"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:36.075Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/production-audit-productio-98b59-l-assets-and-removed-routes-production-1440/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/production-audit-productio-98b59-l-assets-and-removed-routes-production-1440/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/production-audit-productio-98b59-l-assets-and-removed-routes-production-1440/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts",
+                    "column": 57,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c9a79f2a92f9c5450502-766f9fc25850e16f495c",
+          "file": "production-audit.spec.ts",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "title": "production metadata, factual schema, email, assets and removed routes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts",
+                    "line": 6,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:42.884Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts",
+                        "line": 6,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "c9a79f2a92f9c5450502-cc426e6a11948630c631",
+          "file": "production-audit.spec.ts",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "title": "production metadata, factual schema, email, assets and removed routes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts",
+                    "line": 6,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 264,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:24.153Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/production-audit.spec.ts",
+                        "line": 6,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "c9a79f2a92f9c5450502-74447865af3438367100",
+          "file": "production-audit.spec.ts",
+          "line": 2,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "technology.spec.ts",
+      "file": "technology.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Technology content, metadata, semantic hierarchy and no console errors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3549,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:43.734Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-b46cd3955ea89001b28e",
+          "file": "technology.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Technology keyboard, touch selection, distinct routes and working links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3654,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:47.763Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-267bbb8a9d0205d3b382",
+          "file": "technology.spec.ts",
+          "line": 62,
+          "column": 5
+        },
+        {
+          "title": "Technology motion, settling, reduced motion and journey progression",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2914,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:51.458Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-47ba74d0c3fd2866c148",
+          "file": "technology.spec.ts",
+          "line": 145,
+          "column": 5
+        },
+        {
+          "title": "Technology reflow, touch targets, focus and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5313,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:54.404Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-a813f6e35e9a02862d71",
+          "file": "technology.spec.ts",
+          "line": 186,
+          "column": 5
+        },
+        {
+          "title": "Technology initial HTML, factual schema, sitemap and no-JS content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 754,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:47:59.758Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-5dbd7a55ad140bcf0eff",
+          "file": "technology.spec.ts",
+          "line": 234,
+          "column": 5
+        },
+        {
+          "title": "Homepage hero entrance settles and reduced motion is static",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3337,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:00.532Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-48db14c87265f39880c7",
+          "file": "technology.spec.ts",
+          "line": 279,
+          "column": 5
+        },
+        {
+          "title": "Technology content, metadata, semantic hierarchy and no console errors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2148,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:43.165Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-92b17ba092d4c1feddde",
+          "file": "technology.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Technology keyboard, touch selection, distinct routes and working links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6192,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:45.330Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-8caf88be05ecd4144dad",
+          "file": "technology.spec.ts",
+          "line": 62,
+          "column": 5
+        },
+        {
+          "title": "Technology motion, settling, reduced motion and journey progression",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2108,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:51.553Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-1a3eb2ee340463233eee",
+          "file": "technology.spec.ts",
+          "line": 145,
+          "column": 5
+        },
+        {
+          "title": "Technology reflow, touch targets, focus and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4110,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:53.693Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-fc2e0ad72a0b379021a3",
+          "file": "technology.spec.ts",
+          "line": 186,
+          "column": 5
+        },
+        {
+          "title": "Technology initial HTML, factual schema, sitemap and no-JS content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared route output verified once.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/technology.spec.ts",
+                    "line": 238,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 8,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:57.832Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared route output verified once.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/technology.spec.ts",
+                        "line": 238,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-1e8c24cdd4a5e2ed52d9",
+          "file": "technology.spec.ts",
+          "line": 234,
+          "column": 5
+        },
+        {
+          "title": "Homepage hero entrance settles and reduced motion is static",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3461,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:49:57.864Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-8f10b39d038535846f45",
+          "file": "technology.spec.ts",
+          "line": 279,
+          "column": 5
+        },
+        {
+          "title": "Technology content, metadata, semantic hierarchy and no console errors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1858,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:24.454Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-d1e807a10f736f365916",
+          "file": "technology.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Technology keyboard, touch selection, distinct routes and working links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4542,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:26.337Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-4e9944ab73126a12c0d1",
+          "file": "technology.spec.ts",
+          "line": 62,
+          "column": 5
+        },
+        {
+          "title": "Technology motion, settling, reduced motion and journey progression",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2021,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:30.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-60c80be8d7b02c6fa3ad",
+          "file": "technology.spec.ts",
+          "line": 145,
+          "column": 5
+        },
+        {
+          "title": "Technology reflow, touch targets, focus and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3877,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:32.959Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-537b09ff977567b10178",
+          "file": "technology.spec.ts",
+          "line": 186,
+          "column": 5
+        },
+        {
+          "title": "Technology initial HTML, factual schema, sitemap and no-JS content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared route output verified once.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/technology.spec.ts",
+                    "line": 238,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 10,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:36.855Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared route output verified once.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/technology.spec.ts",
+                        "line": 238,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-d7585ecdf4a687d2eeb1",
+          "file": "technology.spec.ts",
+          "line": 234,
+          "column": 5
+        },
+        {
+          "title": "Homepage hero entrance settles and reduced motion is static",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3327,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:36.884Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "52dd1c217ce86d483272-4551d16b25dc61289fb8",
+          "file": "technology.spec.ts",
+          "line": 279,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "wellbeing.spec.ts",
+      "file": "wellbeing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Wellbeing content, images, metadata and console",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4822,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:03.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-41fb13664022fba17493",
+          "file": "wellbeing.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Production cross-page navigation and enquiry destinations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5361,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:08.762Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-53b7c770f1e086a5fa7c",
+          "file": "wellbeing.spec.ts",
+          "line": 71,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing keyboard, touch, rhythm geometry and reduced motion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4984,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate\n    at /workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts:169:8",
+                    "location": {
+                      "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                      "column": 8,
+                      "line": 169
+                    },
+                    "snippet": "  167 |         { timeout: 2500, intervals: [1100] },\n  168 |       )\n> 169 |       .toBe(true);\n      |        ^\n  170 |     geometry.add(await page.locator(\"[data-session-contour]\").innerHTML());\n  171 |   }\n  172 |   expect(geometry.size).toBe(4);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                        "column": 8,
+                        "line": 169
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate\n\n  167 |         { timeout: 2500, intervals: [1100] },\n  168 |       )\n> 169 |       .toBe(true);\n      |        ^\n  170 |     geometry.add(await page.locator(\"[data-session-contour]\").innerHTML());\n  171 |   }\n  172 |   expect(geometry.size).toBe(4);\n    at /workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts:169:8"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:14.148Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-1440/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-1440/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-1440/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                    "column": 8,
+                    "line": 169
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "290733e737f73ba98215-91b616d96e89f151d2d0",
+          "file": "wellbeing.spec.ts",
+          "line": 131,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing reflow, focus, touch target and axe checks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5744,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:20.752Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-26a60eeec4f22e653110",
+          "file": "wellbeing.spec.ts",
+          "line": 202,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing static HTML, schema, sitemap and motion settling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7687,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:26.877Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-32cdbde84dc9b01f04d9",
+          "file": "wellbeing.spec.ts",
+          "line": 249,
+          "column": 5
+        },
+        {
+          "title": "Human Rhythm figures, responsive sources, interaction parity and public email",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-1440",
+              "projectName": "production-1440",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13539,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:48:34.636Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-371a3d8dd72cac89dd6e",
+          "file": "wellbeing.spec.ts",
+          "line": 334,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing content, images, metadata and console",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3648,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:01.366Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-7996dc4fc8b5000d794c",
+          "file": "wellbeing.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Production cross-page navigation and enquiry destinations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4637,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:05.047Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-e81f0a58a6367c698fdd",
+          "file": "wellbeing.spec.ts",
+          "line": 71,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing keyboard, touch, rhythm geometry and reduced motion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4781,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate\n    at /workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts:169:8",
+                    "location": {
+                      "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                      "column": 8,
+                      "line": 169
+                    },
+                    "snippet": "  167 |         { timeout: 4500, intervals: [200] },\n  168 |       )\n> 169 |       .toBe(true);\n      |        ^\n  170 |     geometry.add(await page.locator(\"[data-session-contour]\").innerHTML());\n  171 |   }\n  172 |   expect(geometry.size).toBe(4);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                        "column": 8,
+                        "line": 169
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate\n\n  167 |         { timeout: 4500, intervals: [200] },\n  168 |       )\n> 169 |       .toBe(true);\n      |        ^\n  170 |     geometry.add(await page.locator(\"[data-session-contour]\").innerHTML());\n  171 |   }\n  172 |   expect(geometry.size).toBe(4);\n    at /workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts:169:8"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:09.712Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-768/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-768/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-768/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                    "column": 8,
+                    "line": 169
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "290733e737f73ba98215-8dd760fda4f38a908766",
+          "file": "wellbeing.spec.ts",
+          "line": 131,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing reflow, focus, touch target and axe checks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5737,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:16.325Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-f9e362c4f850966f5eae",
+          "file": "wellbeing.spec.ts",
+          "line": 202,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing static HTML, schema, sitemap and motion settling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared route and timing checks run once.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                    "line": 254,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:22.491Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared route and timing checks run once.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                        "line": 254,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "290733e737f73ba98215-060179b44763a449c2ae",
+          "file": "wellbeing.spec.ts",
+          "line": 249,
+          "column": 5
+        },
+        {
+          "title": "Human Rhythm figures, responsive sources, interaction parity and public email",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-768",
+              "projectName": "production-768",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5015,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:50:22.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-d903ccc27c846938f89d",
+          "file": "wellbeing.spec.ts",
+          "line": 334,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing content, images, metadata and console",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2606,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:40.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-ddb3d993c5d939e9f7b0",
+          "file": "wellbeing.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Production cross-page navigation and enquiry destinations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3960,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:42.879Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-d2331b836dba4b25dfa7",
+          "file": "wellbeing.spec.ts",
+          "line": 71,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing keyboard, touch, rhythm geometry and reduced motion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4697,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate\n    at /workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts:169:8",
+                    "location": {
+                      "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                      "column": 8,
+                      "line": 169
+                    },
+                    "snippet": "  167 |         { timeout: 4500, intervals: [200] },\n  168 |       )\n> 169 |       .toBe(true);\n      |        ^\n  170 |     geometry.add(await page.locator(\"[data-session-contour]\").innerHTML());\n  171 |   }\n  172 |   expect(geometry.size).toBe(4);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                        "column": 8,
+                        "line": 169
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate\n\n  167 |         { timeout: 4500, intervals: [200] },\n  168 |       )\n> 169 |       .toBe(true);\n      |        ^\n  170 |     geometry.add(await page.locator(\"[data-session-contour]\").innerHTML());\n  171 |   }\n  172 |   expect(geometry.size).toBe(4);\n    at /workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts:169:8"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:46.866Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-390/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-390/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/test-results/wellbeing-Wellbeing-keyboa-dbca0-geometry-and-reduced-motion-production-390/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                    "column": 8,
+                    "line": 169
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "290733e737f73ba98215-2a1ae3c202676623b41b",
+          "file": "wellbeing.spec.ts",
+          "line": 131,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing reflow, focus, touch target and axe checks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:53.523Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-359dea3922f1bcccf7a4",
+          "file": "wellbeing.spec.ts",
+          "line": 202,
+          "column": 5
+        },
+        {
+          "title": "Wellbeing static HTML, schema, sitemap and motion settling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared route and timing checks run once.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                    "line": 254,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 289,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:51:59.726Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared route and timing checks run once.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-clean-validation/tests/wellbeing.spec.ts",
+                        "line": 254,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "290733e737f73ba98215-c105caeba3ab054fa49a",
+          "file": "wellbeing.spec.ts",
+          "line": 249,
+          "column": 5
+        },
+        {
+          "title": "Human Rhythm figures, responsive sources, interaction parity and public email",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "production-390",
+              "projectName": "production-390",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11488,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T04:52:00.047Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "290733e737f73ba98215-33fb0d241b7b426fec5a",
+          "file": "wellbeing.spec.ts",
+          "line": 334,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-27T04:46:25.293Z",
+    "duration": 346463.801,
+    "expected": 71,
+    "skipped": 12,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "stats": {
+    "startTime": "2026-09-27T05:19:24.750Z",
+    "duration": 347280.345,
+    "expected": 75,
+    "skipped": 12,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": [
+    "production-1440",
+    "production-768",
+    "production-390"
+  ],
+  "note": "Single full production run. Axe included. 12 duplicate HTTP/schema checks intentionally skipped on tablet/mobile."
+}

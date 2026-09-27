@@ -1,0 +1,469 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/scratch/73b06d39b8ea/tavyora-concepts/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config=playwright.about-contact.config.ts"
+    ],
+    "configFile": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/playwright.about-contact.config.ts",
+    "rootDir": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "new-1440",
+        "name": "new-1440",
+        "testDir": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "about-contact.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "new-768",
+        "name": "new-768",
+        "testDir": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "about-contact.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "new-390",
+        "name": "new-390",
+        "testDir": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "about-contact.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/about-contact-tests.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3120",
+      "url": "http://127.0.0.1:3120",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "about-contact.spec.ts",
+      "file": "about-contact.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "new pages: semantics, metadata, responsive composition and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "new-1440",
+              "projectName": "new-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8450,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:17:51.163Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-bd53a7884c3cd6d6056d",
+          "file": "about-contact.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "enquiry: validation, keyboard, separate values, draft review and fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "new-1440",
+              "projectName": "new-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:18:00.023Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-6755d70c338b880e0fdc",
+          "file": "about-contact.spec.ts",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "title": "five-page navigation and crawlable production routes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "new-1440",
+              "projectName": "new-1440",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3278,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:18:05.777Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-a86d070079044ec02cf4",
+          "file": "about-contact.spec.ts",
+          "line": 158,
+          "column": 5
+        },
+        {
+          "title": "new pages: semantics, metadata, responsive composition and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "new-768",
+              "projectName": "new-768",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6306,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:18:10.410Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-4e99b5481b903b34f6b2",
+          "file": "about-contact.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "enquiry: validation, keyboard, separate values, draft review and fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "new-768",
+              "projectName": "new-768",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6399,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:18:17.200Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-64dd9b70239a8f1934f1",
+          "file": "about-contact.spec.ts",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "title": "five-page navigation and crawlable production routes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared navigation regression runs once.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/tests/about-contact.spec.ts",
+                    "line": 162,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "new-768",
+              "projectName": "new-768",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 158,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:18:23.655Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared navigation regression runs once.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/tests/about-contact.spec.ts",
+                        "line": 162,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-7eaaa3a326d88d889891",
+          "file": "about-contact.spec.ts",
+          "line": 158,
+          "column": 5
+        },
+        {
+          "title": "new pages: semantics, metadata, responsive composition and axe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "new-390",
+              "projectName": "new-390",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:18:25.197Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-475b3126b8082d384940",
+          "file": "about-contact.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "enquiry: validation, keyboard, separate values, draft review and fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "new-390",
+              "projectName": "new-390",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9726,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:18:32.367Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-9e3661170c82340db89b",
+          "file": "about-contact.spec.ts",
+          "line": 72,
+          "column": 5
+        },
+        {
+          "title": "five-page navigation and crawlable production routes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Shared navigation regression runs once.",
+                  "location": {
+                    "file": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/tests/about-contact.spec.ts",
+                    "line": 162,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "new-390",
+              "projectName": "new-390",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 144,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-27T03:18:42.128Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Shared navigation regression runs once.",
+                      "location": {
+                        "file": "/workspace/scratch/73b06d39b8ea/tavyora-concepts/tests/about-contact.spec.ts",
+                        "line": 162,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "4da7fb0178c8fe76c2f3-92da356f2dae763e1909",
+          "file": "about-contact.spec.ts",
+          "line": 158,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-27T03:17:48.470Z",
+    "duration": 53994.471000000005,
+    "expected": 7,
+    "skipped": 2,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "route": "about",
+    "at": "2026-09-27T03:16:39.329Z",
+    "mode": "single simulated-mobile lab run",
+    "scores": {
+      "performance": 85,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2869.888,
+    "cls": 0,
+    "totalBytes": 252229,
+    "warnings": []
+  },
+  {
+    "route": "contact",
+    "at": "2026-09-27T03:16:51.399Z",
+    "mode": "single simulated-mobile lab run",
+    "scores": {
+      "performance": 87,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2701.45535,
+    "cls": 0,
+    "totalBytes": 254626,
+    "warnings": []
+  }
+]

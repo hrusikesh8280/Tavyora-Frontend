@@ -1,0 +1,160 @@
+tavyora/
+├── app/
+│   ├── about/
+│   │   └── page.tsx
+│   ├── contact/
+│   │   └── page.tsx
+│   ├── privacy/
+│   │   └── page.tsx
+│   ├── technology/
+│   │   └── page.tsx
+│   ├── terms/
+│   │   └── page.tsx
+│   ├── wellbeing/
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── icon.svg
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   ├── robots.ts
+│   └── sitemap.ts
+├── components/
+│   ├── production/
+│   │   ├── editorial/
+│   │   ├── legal/
+│   │   ├── technology/
+│   │   ├── wellbeing/
+│   │   ├── Chapter.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HowWeWork.tsx
+│   │   ├── MotionProvider.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── Signal.tsx
+│   │   ├── Technology.tsx
+│   │   ├── content.ts
+│   │   ├── hero-thread.module.css
+│   │   ├── homepage.module.css
+│   │   ├── navigation.module.css
+│   │   └── system.module.css
+│   └── shared/
+│       └── Arrow.tsx
+├── docs/
+│   ├── archive/
+│   │   ├── lighthouse-about-contact/
+│   │   ├── lighthouse-legal/
+│   │   ├── review/
+│   │   ├── about-contact-decisions.md
+│   │   ├── about-contact-lighthouse.json
+│   │   ├── about-contact-results.md
+│   │   ├── about-contact-tests.json
+│   │   ├── cleanup-audit.json
+│   │   ├── cleanup-command-results.json
+│   │   ├── cleanup-dev-check.json
+│   │   ├── cleanup-manifest.md
+│   │   ├── cleanup-tests-corrected.json
+│   │   ├── cleanup-tests-initial.json
+│   │   ├── editorial-pose-stage-results.md
+│   │   ├── editorial-pose-stage.md
+│   │   ├── homepage-copy.md
+│   │   ├── homepage-results.md
+│   │   ├── homepage-seo.md
+│   │   ├── human-rhythm-lighthouse-summary.json
+│   │   ├── human-rhythm-production-browser.json
+│   │   ├── human-rhythm-prompts.md
+│   │   ├── human-rhythm-results.md
+│   │   ├── human-rhythm.md
+│   │   ├── imagery.md
+│   │   ├── legal-handoff.md
+│   │   ├── legal-lighthouse.json
+│   │   ├── legal-tests-initial.json
+│   │   ├── legal-tests.json
+│   │   ├── life-rhythm-art-browser.json
+│   │   ├── life-rhythm-production-browser.json
+│   │   ├── life-rhythm-prompts.json
+│   │   ├── life-rhythm-results.md
+│   │   ├── life-rhythm.md
+│   │   ├── living-signal-copy.md
+│   │   ├── living-signal-design.md
+│   │   ├── living-signal-results.md
+│   │   ├── living-signal-v2-design.md
+│   │   ├── living-signal-v2-results.md
+│   │   ├── pose-stage-art-browser.json
+│   │   ├── pose-stage-lighthouse-summary.json
+│   │   ├── pose-stage-production-browser.json
+│   │   ├── pre-cleanup-assets.md
+│   │   ├── pre-cleanup-content.md
+│   │   ├── pre-cleanup-design-system.md
+│   │   ├── pre-cleanup-qa.md
+│   │   ├── pre-cleanup-seo.md
+│   │   ├── pre-cleanup-strategy.md
+│   │   ├── technology-copy.md
+│   │   ├── technology-lighthouse-summary.json
+│   │   ├── technology-results.md
+│   │   ├── technology-seo.md
+│   │   ├── validation.md
+│   │   ├── wellbeing-claims.md
+│   │   ├── wellbeing-copy.md
+│   │   ├── wellbeing-imagery.md
+│   │   ├── wellbeing-lighthouse-summary.json
+│   │   ├── wellbeing-refinement-qa.json
+│   │   ├── wellbeing-refinement.md
+│   │   ├── wellbeing-results.md
+│   │   └── wellbeing-seo.md
+│   ├── analytics.md
+│   ├── assets.md
+│   ├── content.md
+│   ├── decisions.md
+│   ├── deployment.md
+│   ├── design-system.md
+│   ├── legal-review.md
+│   ├── qa.md
+│   ├── seo.md
+│   └── strategy.md
+├── lib/
+│   ├── editorial-seo.ts
+│   ├── legal-seo.ts
+│   ├── site.ts
+│   ├── technology-seo.ts
+│   └── wellbeing-seo.ts
+├── public/
+│   ├── fonts/
+│   │   ├── Inter-LICENSE.txt
+│   │   ├── Plex-LICENSE.txt
+│   │   ├── ibm-plex-serif-latin-400-italic.woff2
+│   │   ├── ibm-plex-serif-latin-400-normal.woff2
+│   │   └── inter-latin-wght-normal.woff2
+│   ├── images/
+│   │   ├── session-study/
+│   │   ├── practice-space-1200.webp
+│   │   └── practice-space-640.webp
+│   └── social/
+│       ├── tavyora-home.png
+│       ├── tavyora-technology.png
+│       └── tavyora-wellbeing.png
+├── scripts/
+│   ├── generate-social.mjs
+│   ├── generate-technology-social.mjs
+│   ├── generate-wellbeing-social.mjs
+│   └── smoke.mjs
+├── tests/
+│   ├── about-contact.spec.ts
+│   ├── homepage.spec.ts
+│   ├── legal.spec.ts
+│   ├── life-rhythm.spec.ts
+│   ├── production-audit.spec.ts
+│   ├── technology.spec.ts
+│   └── wellbeing.spec.ts
+├── .gitignore
+├── AGENTS.md
+├── CLAUDE.md
+├── README.md
+├── bun.lock
+├── eslint.config.mjs
+├── lighthouserc.cjs
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── playwright.config.ts
+├── postcss.config.mjs
+└── tsconfig.json

@@ -1,0 +1,32 @@
+[
+  {
+    "route": "privacy",
+    "at": "2026-09-27T03:57:52.946Z",
+    "mode": "single simulated-mobile lab run",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2652.6980000000003,
+    "cls": 0,
+    "totalBytes": 237746,
+    "warnings": []
+  },
+  {
+    "route": "terms",
+    "at": "2026-09-27T03:58:02.747Z",
+    "mode": "single simulated-mobile lab run",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2213.13235,
+    "cls": 0,
+    "totalBytes": 237638,
+    "warnings": []
+  }
+]

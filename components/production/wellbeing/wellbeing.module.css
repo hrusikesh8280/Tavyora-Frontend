@@ -1,0 +1,1596 @@
+/* Breath is a rhythm within Living Signal, not a second brand. */
+.environment {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+}
+.environment > div:last-child {
+  position: relative;
+  z-index: 1;
+}
+.daylight {
+  position: fixed;
+  z-index: 0;
+  inset: -6%;
+  pointer-events: none;
+  opacity: 0.18;
+  background: radial-gradient(
+    ellipse at 72% 28%,
+    var(--soft) 0,
+    transparent 63%
+  );
+  transition: transform 1800ms cubic-bezier(0.25, 0.5, 0.25, 1);
+}
+.main::before {
+  opacity: 0.65;
+}
+.breadcrumb {
+  margin-left: var(--inset);
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--muted);
+  padding-top: 22px;
+}
+.breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.heroComposition {
+  position: relative;
+  padding: 46px 0 46px;
+}
+.heroLabel {
+  margin: 0 0 38px var(--inset);
+  color: var(--muted);
+  position: relative;
+}
+.hero h1 {
+  position: relative;
+  margin-left: var(--inset);
+  font-size: clamp(64px, 7.6vw, 112px);
+  letter-spacing: -0.065em;
+  line-height: 1.1;
+  font-weight: 440;
+}
+.hero h1 em {
+  display: block;
+  padding: 20px 0 0 9%;
+  font-family: PlexSerif, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+.breath {
+  pointer-events: none;
+  color: var(--signal);
+}
+.breath svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  stroke: currentColor;
+  stroke-width: 0.8;
+}
+.breath path {
+  vector-effect: non-scaling-stroke;
+}
+.breath g {
+  transform-origin: center;
+}
+.heroContour {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 500px;
+  opacity: 0.68;
+}
+.heroBottom {
+  position: relative;
+  margin: 126px 0 0 var(--inset);
+  display: grid;
+  grid-template-columns: 1fr 42%;
+  gap: 80px;
+  align-items: start;
+}
+.heroBottom > p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 490px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.heroBottom .actions {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.heroFoot {
+  margin: 52px 0 0 var(--inset);
+  font-size: 10px;
+  letter-spacing: 0.055em;
+  color: var(--muted);
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+.practice {
+  padding: 66px 0 104px;
+  border-top: 1px solid var(--mineral);
+}
+.practiceGrid {
+  display: grid;
+  grid-template-columns: 1fr 43%;
+  gap: 88px;
+  margin-left: var(--inset);
+}
+.practiceGrid > div > p:first-child {
+  margin-bottom: 30px;
+  color: var(--muted);
+}
+.main h2 {
+  font-size: clamp(38px, 4.2vw, 62px);
+  letter-spacing: -0.05em;
+  line-height: 1.14;
+  font-weight: 430;
+}
+.main h2 em {
+  font-family: PlexSerif, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+.lead {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.95;
+  max-width: 520px;
+}
+.practiceGrid .lead {
+  margin-top: 30px;
+  max-width: 450px;
+}
+.principles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.principles li {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 20px;
+  padding: 26px 0;
+  border-top: 1px solid var(--mineral);
+}
+.principles li:first-child {
+  padding-top: 0;
+  border: 0;
+}
+.number {
+  font-size: 10px;
+  letter-spacing: 0.055em;
+  color: var(--clay);
+  line-height: 1.6;
+  padding-top: 5px;
+}
+.principles h3 {
+  font-size: 24px;
+  font-weight: 440;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+.principles p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--muted);
+}
+.individual {
+  padding: 32px 0 100px;
+}
+.individualGrid {
+  margin-left: var(--inset);
+  display: grid;
+  grid-template-columns: 46% 1fr;
+  gap: 8%;
+  align-items: start;
+}
+.imageFigure {
+  margin: 0;
+  padding-top: 10px;
+}
+.imageFrame {
+  position: relative;
+  padding: 0 16px 16px 0;
+}
+.imageFrame::after {
+  content: "";
+  position: absolute;
+  inset: 16px 0 0 16px;
+  border: 1px solid var(--signal);
+  border-top-right-radius: 42%;
+  pointer-events: none;
+}
+.imageFrame img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.98;
+  object-fit: cover;
+  object-position: 40% 50%;
+  display: block;
+  border-top-right-radius: 42%;
+}
+.imageFigure figcaption {
+  margin-top: 20px;
+  font-size: 9px;
+  line-height: 1.8;
+  letter-spacing: 0.035em;
+  color: var(--muted);
+}
+.imageLine {
+  font-size: 30px;
+  line-height: 1.35;
+  letter-spacing: -0.035em;
+  margin: 64px 0 0 20%;
+}
+.imageLine em {
+  font-family: PlexSerif, Georgia, serif;
+  font-weight: 400;
+}
+.individualCopy {
+  padding-top: 54px;
+}
+.individualCopy h2 {
+  font-size: clamp(38px, 3.5vw, 52px);
+}
+.individualCopy > .lead {
+  margin: 30px 0 34px;
+}
+.qualities {
+  margin: 0 0 22px;
+}
+.qualities > div {
+  padding: 19px 0;
+  border-top: 1px solid var(--mineral);
+}
+.qualities dt {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+  font-size: 19px;
+  letter-spacing: -0.025em;
+}
+.qualities dd {
+  margin: 12px 0 0 40px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--muted);
+}
+.group {
+  border-top: 1px solid var(--mineral);
+  padding: 64px 0 0;
+}
+.groupGrid {
+  margin-left: var(--inset);
+  display: grid;
+  grid-template-columns: 1fr 38%;
+  gap: 64px;
+  align-items: start;
+}
+.groupGrid > div > p:first-child:not(.lead) {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+.groupCopy {
+  padding-top: 44px;
+}
+.groupCopy > p + p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 24px;
+}
+.groupCopy > a {
+  margin-top: 26px;
+}
+.sharedLines {
+  height: 150px;
+  margin: 40px 0 6px;
+  pointer-events: none;
+}
+.sharedLines svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--signal);
+  stroke-width: 0.8;
+  opacity: 0.7;
+}
+.sharedLines path {
+  vector-effect: non-scaling-stroke;
+}
+.session {
+  padding: 44px 0 100px;
+}
+.sectionIntro {
+  margin-left: var(--inset);
+  display: grid;
+  grid-template-columns: 1fr 32%;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 54px;
+}
+.sectionIntro > p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--muted);
+  max-width: 360px;
+}
+.rhythm {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  margin-left: var(--inset);
+  gap: 8%;
+}
+.rhythmField {
+  position: relative;
+  align-self: start;
+  padding-top: 24px;
+  border-top: 1px solid var(--mineral);
+}
+.rhythmField > p:first-child {
+  color: var(--muted);
+}
+.humanStudy {
+  margin: 0;
+}
+.studyStage {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  margin-top: 10px;
+  isolation: isolate;
+  overflow: clip;
+}
+.studyStage svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  stroke: var(--signal);
+  stroke-width: 1;
+  pointer-events: none;
+}
+.studyStage path {
+  vector-effect: non-scaling-stroke;
+}
+.contourBehind {
+  z-index: 1;
+}
+.studyStage .contourFront {
+  z-index: 4;
+  clip-path: polygon(0 68%, 100% 68%, 100% 100%, 0 100%);
+  mask-image: linear-gradient(
+    90deg,
+    transparent 30%,
+    #000 48%,
+    #000 72%,
+    transparent 92%
+  );
+  opacity: 0.65;
+}
+.studyStage .apertureDefinition {
+  width: 0;
+  height: 0;
+}
+.studyAperture {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: var(--bone);
+  pointer-events: none;
+}
+.studyLight {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(112deg, var(--soft) 0%, var(--bone) 72%);
+  opacity: 0.65;
+  transform: translateX(-2%);
+  transition:
+    transform 600ms ease,
+    opacity 600ms ease;
+}
+[data-human-stage="move"] .studyLight {
+  transform: translateX(3%);
+  opacity: 0.76;
+}
+[data-human-stage="breathe"] .studyLight {
+  transform: translateX(6%);
+  opacity: 0.4;
+}
+[data-human-stage="close"] .studyLight {
+  transform: translateX(0);
+  opacity: 0.85;
+}
+.contourBehind path {
+  transition: opacity 360ms ease;
+}
+[data-human-stage="breathe"] .contourBehind path:nth-child(even),
+[data-human-stage="close"] .contourBehind path:nth-child(n + 3) {
+  opacity: 0;
+}
+.mobileStageCopy {
+  display: none;
+}
+.studyIndex {
+  position: absolute;
+  z-index: 4;
+  top: 24px;
+  left: 0;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.figureAperture {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+.figureLayer {
+  position: absolute;
+  z-index: 3;
+  inset: 19% 24% 10% 2%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(3px);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease,
+    visibility 0s 160ms;
+  pointer-events: none;
+  /* The figure shares the aperture floor; shoulders/extended arm can break its upper edge. */
+  clip-path: inset(0 0 0 0);
+}
+.figureLayer[data-pose="move"] {
+  inset: 0% 0% 10% 6%;
+}
+.figureLayer[data-pose="breathe"] {
+  inset: 23% 4% 10% 30%;
+}
+.figureLayer[data-pose="close"] {
+  inset: 20% 18% 10% 12%;
+}
+.figureLayer[data-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition:
+    opacity 360ms ease 160ms,
+    transform 200ms ease 400ms,
+    visibility 0s;
+}
+.figureLayer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: saturate(0.72);
+}
+.rhythmStatus {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.rhythmChoice {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 24px 1fr 8px;
+  gap: 20px;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--mineral);
+  padding: 28px 0;
+  text-align: left;
+  color: var(--ink);
+  cursor: pointer;
+}
+.stageName {
+  display: block;
+  font-size: 32px;
+  letter-spacing: -0.035em;
+  margin-bottom: 14px;
+  line-height: 1.1;
+}
+.stageCopy {
+  display: block;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.stageMark {
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--signal);
+  margin-top: 10px;
+  transition: background 180ms ease;
+}
+.rhythmChoice[aria-pressed="true"] .stageName {
+  color: var(--clay);
+}
+.rhythmChoice[aria-pressed="true"] .stageMark {
+  background: var(--signal);
+}
+.rhythmChoice:hover .stageName {
+  color: var(--clay);
+}
+.practitioner {
+  padding: 64px 0 48px;
+  border-top: 1px solid var(--mineral);
+}
+.practitionerGrid {
+  margin-left: var(--inset);
+  display: grid;
+  grid-template-columns: 1fr 43%;
+  gap: 88px;
+}
+.studyNote {
+  padding: 20px 0;
+}
+.studyNote > span:first-child {
+  color: var(--muted);
+}
+.studyNote > p {
+  font-size: clamp(50px, 6vw, 84px);
+  line-height: 1.22;
+  letter-spacing: -0.055em;
+  margin: 38px 0;
+  font-weight: 430;
+}
+.studyNote em {
+  font-family: PlexSerif, Georgia, serif;
+  font-weight: 400;
+}
+.qualification {
+  display: inline-block;
+  padding: 16px 0;
+  border-top: 1px solid var(--signal);
+  font-size: 10px;
+  letter-spacing: 0.045em;
+}
+.practitionerCopy {
+  padding-top: 76px;
+}
+.practitionerCopy h2 {
+  font-size: clamp(37px, 3.5vw, 51px);
+}
+.practitionerCopy .lead {
+  margin: 30px 0 24px;
+}
+.practitionerCopy > p:not(.lead) {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+.practitionerCopy > a {
+  margin-top: 28px;
+}
+.editorial {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0;
+}
+.pauseContour {
+  position: absolute;
+  inset: 0;
+  opacity: 0.56;
+}
+.editorial > div:last-child {
+  position: relative;
+  padding: 0 0 0 5%;
+}
+.editorial p {
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+.editorial h2 {
+  font-size: clamp(48px, 5.6vw, 80px);
+  line-height: 1.18;
+}
+.fit {
+  padding: 56px 0 90px;
+  border-top: 1px solid var(--mineral);
+}
+.fitGrid {
+  display: grid;
+  grid-template-columns: 1fr 43%;
+  gap: 88px;
+  margin-left: var(--inset);
+}
+.fitGrid .lead {
+  margin-top: 30px;
+  max-width: 430px;
+}
+.fit ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fit li {
+  position: relative;
+  padding: 19px 0 19px 24px;
+  border-top: 1px solid var(--mineral);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.fit li::before {
+  content: "↳";
+  color: var(--signal);
+  position: absolute;
+  left: 0;
+}
+.responsible {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-top: 30px;
+  max-width: 480px;
+}
+.closing {
+  padding: 64px 0 100px var(--inset);
+  border-top: 1px solid var(--signal);
+}
+.closing > p:first-child {
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+.closing h2 {
+  font-size: clamp(56px, 7vw, 100px);
+  line-height: 1.1;
+}
+.closing > p:not(:first-child) {
+  max-width: 470px;
+  margin: 30px 0 36px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+@media (max-width: 1200px) {
+  .heroBottom {
+    gap: 40px;
+  }
+  .practiceGrid,
+  .practitionerGrid,
+  .fitGrid {
+    gap: 48px;
+  }
+  .individualGrid {
+    gap: 7%;
+  }
+  .groupGrid {
+    gap: 40px;
+  }
+  .sectionIntro {
+    grid-template-columns: 1fr 33%;
+    gap: 40px;
+  }
+  .rhythm {
+    gap: 6%;
+  }
+  .rhythmChoice {
+    gap: 12px;
+  }
+  .hero h1 {
+    font-size: 7.5vw;
+  }
+  .heroBottom {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 8.3vw;
+  }
+  .hero h1 em {
+    padding-left: 0;
+  }
+  .heroContour {
+    height: 450px;
+  }
+  .heroBottom {
+    margin-top: 115px;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .heroBottom .actions {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+  .heroBottom > p {
+    max-width: 520px;
+  }
+  .practiceGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .practiceGrid .lead {
+    max-width: 520px;
+  }
+  .principles li:first-child {
+    border-top: 1px solid var(--mineral);
+    padding-top: 26px;
+  }
+  .principles {
+    max-width: 600px;
+  }
+  .individualGrid {
+    grid-template-columns: 42% 1fr;
+    gap: 6%;
+  }
+  .individualCopy {
+    padding-top: 24px;
+  }
+  .individualCopy h2 {
+    font-size: 37px;
+  }
+  .lead {
+    font-size: 14px;
+  }
+  .imageLine {
+    margin: 46px 0 0 8%;
+    font-size: 26px;
+  }
+  .groupGrid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .groupCopy {
+    max-width: 500px;
+    padding-top: 28px;
+    margin-left: 20%;
+  }
+  .sectionIntro {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .sectionIntro > p {
+    max-width: 500px;
+  }
+  .rhythm {
+    grid-template-columns: 1fr 45%;
+    gap: 5%;
+  }
+  .studyStage {
+    height: 400px;
+  }
+  .stageName {
+    font-size: 28px;
+  }
+  .stageCopy {
+    font-size: 13px;
+  }
+  .rhythmChoice {
+    grid-template-columns: 20px 1fr 6px;
+  }
+  .practitionerGrid {
+    gap: 36px;
+  }
+  .practitionerCopy {
+    padding-top: 32px;
+  }
+  .practitionerCopy h2 {
+    font-size: 37px;
+  }
+  .studyNote > p {
+    font-size: 54px;
+  }
+  .editorial {
+    min-height: 560px;
+  }
+  .fitGrid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .fitGrid ul {
+    max-width: 620px;
+  }
+}
+@media (max-width: 600px) {
+  .breadcrumb {
+    padding-top: 14px;
+    margin-left: 24px;
+  }
+  .heroComposition {
+    padding: 32px 0 32px;
+  }
+  .heroLabel {
+    margin: 0 0 32px 24px;
+    font-size: 9px;
+  }
+  .hero h1 {
+    margin-left: 24px;
+    font-size: clamp(45px, 12vw, 66px);
+    line-height: 1.08;
+    letter-spacing: -0.06em;
+  }
+  .hero h1 em {
+    padding: 18px 0 0;
+    max-width: 300px;
+    font-size: 1.02em;
+    line-height: 1.15;
+    letter-spacing: -0.045em;
+  }
+  .heroContour {
+    top: 14px;
+    height: 355px;
+    opacity: 0.6;
+  }
+  .breath path:nth-child(n + 3) {
+    display: none;
+  }
+  .heroBottom {
+    margin: 78px 0 0 24px;
+    gap: 26px;
+  }
+  .heroBottom > p {
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 360px;
+  }
+  .heroBottom .actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .heroBottom .actions a {
+    font-size: 12px;
+  }
+  .heroFoot {
+    margin: 36px 0 0 24px;
+    font-size: 8px;
+    gap: 12px;
+    flex-wrap: wrap;
+    line-height: 1.8;
+  }
+  .practice {
+    padding: 40px 0 56px;
+  }
+  .practiceGrid {
+    margin-left: 24px;
+    gap: 32px;
+  }
+  .main h2 {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .practiceGrid > div > p:first-child {
+    font-size: 9px;
+    margin-bottom: 26px;
+  }
+  .practiceGrid .lead {
+    margin-top: 24px;
+  }
+  .principles li {
+    grid-template-columns: 20px 1fr;
+    gap: 14px;
+    padding: 24px 0;
+  }
+  .principles h3 {
+    font-size: 23px;
+    line-height: 1.3;
+  }
+  .principles p {
+    font-size: 14px;
+  }
+  .individual {
+    padding: 16px 0 56px;
+  }
+  .individualGrid {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .imageFigure {
+    width: 100%;
+    padding: 0;
+  }
+  .imageFrame {
+    padding: 0 10px 10px 0;
+  }
+  .imageFrame::after {
+    inset: 10px 0 0 10px;
+    border-top-right-radius: 32%;
+  }
+  .imageFrame img {
+    aspect-ratio: 1.15;
+    object-position: 48% 65%;
+    border-top-right-radius: 32%;
+  }
+  .imageFigure figcaption {
+    font-size: 8px;
+    margin-top: 16px;
+    line-height: 1.8;
+  }
+  .imageLine {
+    margin: 28px 0 0 18%;
+    font-size: 25px;
+  }
+  .individualCopy {
+    padding: 0;
+  }
+  .individualCopy > .lead {
+    margin: 24px 0 26px;
+  }
+  .qualities dt {
+    font-size: 19px;
+    gap: 16px;
+  }
+  .qualities dd {
+    margin-left: 32px;
+    font-size: 13px;
+  }
+  .individualCopy > a {
+    font-size: 12px;
+    gap: 20px;
+  }
+  .group {
+    padding-top: 40px;
+  }
+  .groupGrid {
+    margin-left: 24px;
+  }
+  .groupGrid > div > p:first-child:not(.lead) {
+    font-size: 9px;
+    line-height: 1.8;
+    margin-bottom: 26px;
+  }
+  .groupCopy {
+    margin-left: 0;
+    padding-top: 24px;
+  }
+  .groupCopy > a {
+    font-size: 12px;
+    gap: 20px;
+  }
+  .sharedLines {
+    height: 100px;
+    margin: 28px 0 0;
+  }
+  .sharedLines path:last-child {
+    display: none;
+  }
+  .session {
+    padding: 26px 0 56px;
+  }
+  .sectionIntro {
+    margin-left: 24px;
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+  .sectionIntro > p {
+    font-size: 14px;
+  }
+  .rhythm {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .rhythmField {
+    width: 100%;
+    padding-top: 18px;
+  }
+  .rhythmField > p:first-child {
+    font-size: 9px;
+  }
+  .studyStage {
+    height: 300px;
+    margin-top: 0;
+  }
+  .rhythmField path:nth-child(n + 3) {
+    display: none;
+  }
+  .rhythmChoice {
+    padding: 24px 0;
+    grid-template-columns: 20px 1fr 6px;
+    gap: 14px;
+  }
+  .stageName {
+    font-size: 29px;
+    margin-bottom: 12px;
+  }
+  .stageCopy {
+    font-size: 14px;
+  }
+  .practitioner {
+    padding: 40px 0 24px;
+  }
+  .practitionerGrid {
+    margin-left: 24px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .studyNote {
+    padding: 0;
+  }
+  .studyNote > span:first-child {
+    font-size: 8px;
+  }
+  .studyNote > p {
+    font-size: 59px;
+    line-height: 1.2;
+    margin: 28px 0;
+  }
+  .qualification {
+    font-size: 9px;
+  }
+  .practitionerCopy {
+    padding-top: 8px;
+  }
+  .practitionerCopy .lead {
+    margin: 24px 0;
+  }
+  .practitionerCopy > a {
+    font-size: 12px;
+    gap: 20px;
+  }
+  .editorial {
+    min-height: 400px;
+    margin: 26px 0;
+  }
+  .editorial > div:last-child {
+    padding-left: 24px;
+    width: 100%;
+  }
+  .editorial p {
+    font-size: 8px;
+    margin-bottom: 24px;
+  }
+  .editorial h2 {
+    font-size: 37px;
+    max-width: 290px;
+  }
+  .pauseContour {
+    opacity: 0.45;
+  }
+  .fit {
+    padding: 40px 0 52px;
+  }
+  .fitGrid {
+    margin-left: 24px;
+    gap: 28px;
+  }
+  .fitGrid .lead {
+    margin-top: 24px;
+  }
+  .fit li {
+    font-size: 14px;
+    line-height: 1.85;
+    padding: 17px 0 17px 24px;
+  }
+  .responsible {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+  .closing {
+    padding: 40px 0 56px 24px;
+  }
+  .closing > p:first-child {
+    font-size: 9px;
+    margin-bottom: 28px;
+  }
+  .closing h2 {
+    font-size: 48px;
+    line-height: 1.12;
+  }
+  .closing > p:not(:first-child) {
+    font-size: 14px;
+    margin: 26px 0 30px;
+  }
+  .closing .actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .closing .actions a {
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .daylight {
+    transition: none;
+  }
+}
+:global([data-motion="off"]) .daylight {
+  transition: none;
+}
+
+/* Mobile contours have their own geometry and leave a clear type opening. */
+.breath .narrowContour {
+  display: none;
+}
+@media (max-width: 600px) {
+  .breath .wideContour {
+    display: none;
+  }
+  .breath .narrowContour {
+    display: block;
+  }
+}
+
+/* Pose-stage mobile composition: selected label, art, copy, then touch selectors. */
+@media (max-width: 600px) {
+  .rhythmField {
+    display: flex;
+    flex-direction: column;
+  }
+  .rhythmField > p:first-child {
+    order: 0;
+  }
+  .rhythmStatus {
+    order: 1;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 20px 0 4px;
+    overflow: visible;
+    clip-path: none;
+    font-size: 22px;
+    letter-spacing: -0.025em;
+  }
+  .humanStudy {
+    order: 2;
+  }
+  .mobileStageCopy {
+    order: 3;
+    display: block;
+    min-height: 96px;
+    margin: 14px 0 0;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 32ch;
+  }
+  .rhythmChoices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+  }
+  .rhythmChoice {
+    padding: 18px 0;
+    grid-template-columns: 18px 1fr;
+    gap: 8px;
+    min-height: 60px;
+  }
+  .rhythmChoice .stageName {
+    font-size: 23px;
+    margin-bottom: 0;
+  }
+  .rhythmChoice .stageCopy,
+  .rhythmChoice .stageMark {
+    display: none;
+  }
+  .figureLayer {
+    inset: 20% 19% 10% 0;
+  }
+  .figureLayer[data-pose="move"] {
+    inset: 0% -3% 10% 0;
+  }
+  .figureLayer[data-pose="breathe"] {
+    inset: 23% 0% 10% 24%;
+  }
+  .figureLayer[data-pose="close"] {
+    inset: 20% 12% 10% 6%;
+  }
+  .studyIndex {
+    display: none;
+  }
+  .studyStage .contourFront {
+    mask-image: linear-gradient(90deg, transparent 55%, #000 78%, transparent);
+  }
+  .contourBehind path:nth-child(n + 3) {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .studyLight {
+    transform: none !important;
+    transition: opacity 120ms ease;
+  }
+  .figureLayer,
+  .figureLayer[data-visible="true"] {
+    transform: none;
+    transition: opacity 120ms ease;
+  }
+  .contourBehind path {
+    transition: none;
+  }
+}
+:global([data-motion="off"]) .studyLight,
+:global([data-motion="off"]) .figureLayer {
+  transform: none;
+  transition: none;
+}
+
+/* LIFE RHYTHM: section-local pacing; every transition ends in stillness. */
+.rhythm {
+  --scene-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.storyInvitation {
+  max-width: 28ch;
+  margin: 22px 0 18px;
+  font-size: 21px;
+  line-height: 1.5;
+  letter-spacing: -0.025em;
+}
+.studyStage {
+  height: auto;
+  aspect-ratio: 1 / 1;
+  max-height: 500px;
+  margin-top: 0;
+}
+.studyAperture,
+.figureAperture {
+  inset: 3% 6%;
+}
+.studyAperture {
+  z-index: 2;
+}
+.studyLight {
+  z-index: 4;
+  opacity: 0.08;
+  transition:
+    transform 1400ms var(--scene-ease),
+    opacity 1400ms var(--scene-ease);
+}
+[data-human-stage="move"] .studyLight {
+  opacity: 0.12;
+}
+[data-human-stage="breathe"] .studyLight {
+  opacity: 0.04;
+}
+[data-human-stage="close"] .studyLight {
+  opacity: 0.16;
+}
+.figureLayer,
+.figureLayer[data-pose="move"],
+.figureLayer[data-pose="breathe"],
+.figureLayer[data-pose="close"] {
+  inset: 0;
+  transform: translateY(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 480ms var(--scene-ease),
+    transform 480ms var(--scene-ease),
+    visibility 0s 480ms;
+}
+.figureLayer[data-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition:
+    opacity 780ms var(--scene-ease) 400ms,
+    transform 200ms var(--scene-ease) 1100ms,
+    visibility 0s;
+}
+.figureLayer img {
+  object-fit: contain;
+  object-position: center;
+  filter: saturate(0.9);
+}
+.studyStage .contourFront {
+  opacity: 0.55;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 32%,
+    #000 54%,
+    #000 80%,
+    transparent
+  );
+}
+.studyIndex {
+  top: 2px;
+  font-size: 10px;
+}
+.contourBehind path {
+  transition: opacity 1100ms var(--scene-ease);
+}
+.rhythmChoice {
+  transition: color 200ms ease;
+}
+.rhythmChoice:hover .stageName {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+}
+.rhythmChoice .stageCopy {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.storyClosing {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--mineral);
+  padding-top: 28px;
+}
+.storyClosing p {
+  font-size: 21px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+  max-width: 32ch;
+}
+.storyClosing a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  gap: 32px;
+  color: var(--ink);
+  text-underline-offset: 6px;
+  font-size: 16px;
+}
+@media (min-width: 1025px) and (min-height: 720px) and (prefers-reduced-motion: no-preference) {
+  .rhythmField {
+    position: sticky;
+    top: 104px;
+  }
+  .studyStage {
+    max-height: min(52vh, 500px);
+  }
+  .rhythmChoice {
+    min-height: 48vh;
+    align-content: center;
+  }
+  .rhythm {
+    row-gap: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .storyInvitation {
+    order: 0;
+    font-size: 19px;
+    margin: 16px 0 4px;
+  }
+  .rhythmStatus {
+    margin-top: 16px;
+  }
+  .studyStage {
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .studyAperture,
+  .figureAperture {
+    inset: 2% 0;
+  }
+  .mobileStageCopy {
+    font-size: 16px;
+    line-height: 1.75;
+    min-height: 112px;
+  }
+  .rhythmChoice {
+    min-height: 64px;
+  }
+  .rhythmChoice .stageName {
+    font-size: 24px;
+  }
+  .studyStage .contourFront {
+    opacity: 0.42;
+    mask-image: linear-gradient(90deg, transparent 55%, #000 80%, transparent);
+  }
+  .storyClosing {
+    padding-top: 24px;
+  }
+  .storyClosing p {
+    font-size: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rhythmField {
+    position: relative;
+    top: auto;
+  }
+  .studyLight {
+    transform: none !important;
+    transition: opacity 120ms ease;
+  }
+  .figureLayer,
+  .figureLayer[data-visible="true"] {
+    transform: none;
+    transition: opacity 120ms ease;
+  }
+  .contourBehind path {
+    transition: none;
+  }
+}
+:global([data-motion="off"]) .rhythmField {
+  position: relative;
+  top: auto;
+}
+:global([data-motion="off"]) .studyLight,
+:global([data-motion="off"]) .figureLayer {
+  transform: none;
+  transition: none;
+}
+
+/* Session study: one person, one room. Local to Wellbeing. */
+.heroLight {
+  position: absolute;
+  inset: -20px 0 12%;
+  pointer-events: none;
+  background: linear-gradient(
+    116deg,
+    transparent 18%,
+    color-mix(in srgb, var(--soft) 65%, transparent) 44%,
+    transparent 72%
+  );
+  clip-path: polygon(34% 0, 82% 0, 63% 100%, 5% 100%);
+  opacity: 0.7;
+}
+.heroMaterial {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  width: 22%;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 0 0 0 60%;
+  opacity: 0.65;
+  mask-image: linear-gradient(to bottom, #000 65%, transparent);
+}
+.heroMaterial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 68% 80%;
+}
+.heroContour {
+  opacity: 0.8;
+}
+.studyAperture {
+  background: var(--soft);
+}
+.studyAperture,
+.figureAperture {
+  inset: 3% 8% 3% 3%;
+}
+.figureAperture {
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 9%,
+    #000 94%,
+    transparent
+  );
+}
+.studyStage .contourFront {
+  clip-path: polygon(0 82%, 100% 82%, 100% 100%, 0 100%);
+  opacity: 0.46;
+}
+.figureLayer img {
+  object-fit: cover;
+  filter: none;
+}
+.figureLayer[data-visible="true"] {
+  transition:
+    opacity 850ms var(--scene-ease) 350ms,
+    transform 220ms var(--scene-ease) 1080ms,
+    visibility 0s;
+}
+[data-human-stage="breathe"] .figureLayer[data-visible="true"] {
+  transition:
+    opacity 1050ms var(--scene-ease) 350ms,
+    transform 220ms var(--scene-ease) 1280ms,
+    visibility 0s;
+}
+.studyLight {
+  background: linear-gradient(110deg, var(--soft), transparent 75%);
+  transition:
+    transform 1500ms var(--scene-ease),
+    opacity 1500ms var(--scene-ease);
+}
+.stageName {
+  transition: color 200ms ease;
+}
+@media (max-width: 900px) {
+  .heroMaterial {
+    width: 25%;
+    height: 125px;
+    opacity: 0.4;
+  }
+}
+@media (max-width: 600px) {
+  .heroMaterial {
+    top: 250px;
+    right: 0;
+    width: 34%;
+    height: 100px;
+    opacity: 0.48;
+  }
+  .heroLight {
+    inset: 0 0 25%;
+    opacity: 0.55;
+  }
+  .studyAperture,
+  .figureAperture {
+    inset: 2% 2% 2% 0;
+  }
+  .studyStage .contourFront {
+    opacity: 0.3;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .figureLayer,
+  .figureLayer[data-visible="true"],
+  [data-human-stage="breathe"] .figureLayer[data-visible="true"] {
+    transform: none;
+    transition: opacity 120ms ease;
+  }
+  .studyLight {
+    transform: none !important;
+    transition: none;
+  }
+}
+:global([data-motion="off"]) .figureLayer,
+:global([data-motion="off"]) .figureLayer[data-visible="true"],
+:global([data-motion="off"])
+  [data-human-stage="breathe"]
+  .figureLayer[data-visible="true"] {
+  transform: none;
+  transition: opacity 120ms ease;
+}
+
+/* Editorial figure studies: static print treatment, not practitioner portraits.
+   Existing WebP sources, responsive loader and timing remain unchanged. */
+.figureLayer img {
+  filter: grayscale(1) sepia(0.22) saturate(0.55) contrast(0.9);
+  mix-blend-mode: multiply;
+}
+.figureAperture {
+  isolation: isolate;
+  background: var(--bone);
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+}
+.figureAperture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background-image: radial-gradient(var(--ink) 0.45px, transparent 0.6px);
+  background-size: 4px 4px;
+  opacity: 0.045;
+}
+.imageFrame img,
+.heroMaterial img {
+  filter: grayscale(1) sepia(0.22) saturate(0.55) contrast(0.94);
+}
+@media (max-width: 600px) {
+  .figureAperture {
+    mask-image: linear-gradient(
+      90deg,
+      transparent,
+      #000 7%,
+      #000 94%,
+      transparent
+    );
+  }
+}

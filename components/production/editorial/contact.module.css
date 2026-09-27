@@ -1,0 +1,432 @@
+.hero {
+  padding-bottom: 54px;
+}
+.hero .introduction {
+  margin: 36px 0 0 28%;
+  max-width: 550px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.9;
+  letter-spacing: 0;
+}
+.conversation {
+  padding: 28px 0 72px var(--inset);
+}
+.conversationTitle {
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8%;
+}
+.choices button {
+  border: 0;
+  border-top: 1px solid var(--mineral);
+  border-bottom: 1px solid var(--mineral);
+  padding: 28px 0;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+.choices button::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--signal);
+  transition: width 300ms ease;
+}
+.choices button[aria-pressed="true"]::before {
+  width: 100%;
+}
+.choices button > span:first-child {
+  display: block;
+  color: var(--muted);
+}
+.choices strong {
+  display: block;
+  font-size: clamp(36px, 4.3vw, 62px);
+  font-weight: 440;
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+  margin: 26px 0;
+}
+.choices em,
+.formNote h2 em {
+  font-family: PlexSerif, Georgia, serif;
+  font-weight: 400;
+}
+.choiceCopy {
+  display: block;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 350px;
+  min-height: 58px;
+}
+.choiceAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  margin-top: 28px;
+  min-height: 44px;
+}
+.choiceAction svg {
+  width: 20px;
+  height: 20px;
+}
+.choices button[aria-pressed="true"] .choiceAction {
+  color: var(--clay);
+}
+.choices button[aria-pressed="true"] .choiceAction::after {
+  content: "Selected";
+  font-size: 11px;
+  border-bottom: 1px solid var(--signal);
+}
+.choices button:hover .choiceAction {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.responseSignal {
+  width: calc(100% + var(--inset));
+  margin-left: calc(-1 * var(--inset));
+  height: 100px;
+  stroke: var(--signal);
+  stroke-width: 0.8;
+  display: block;
+  margin-top: 32px;
+}
+.responseSignal path {
+  vector-effect: non-scaling-stroke;
+}
+.responseSignal g {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.enquiry[data-enquiry-path="technology"] [data-route="technology"],
+.enquiry[data-enquiry-path="wellbeing"] [data-route="wellbeing"] {
+  opacity: 1;
+}
+.formLayout {
+  display: grid;
+  grid-template-columns: 1fr 52%;
+  gap: 8%;
+  padding-top: 48px;
+  align-items: start;
+}
+.formNote > p:first-child {
+  color: var(--muted);
+  margin-bottom: 26px;
+}
+.formNote h2 {
+  font-size: clamp(36px, 4vw, 55px);
+  font-weight: 430;
+  letter-spacing: -0.045em;
+  line-height: 1.18;
+  margin-bottom: 28px;
+}
+.formNote p:not(:first-child),
+.deliveryNote p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 340px;
+}
+.deliveryNote {
+  margin-top: 42px;
+  padding-top: 20px;
+  border-top: 1px solid var(--mineral);
+  max-width: 340px;
+}
+.deliveryNote p {
+  margin-top: 14px;
+}
+.formLegend {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: var(--muted);
+}
+.field {
+  margin-bottom: 28px;
+}
+.field label,
+.review label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.field label span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.field input,
+.field select,
+.field textarea,
+.review textarea {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  border: 1px solid var(--mineral);
+  border-radius: 0;
+  background: color-mix(in srgb, var(--bone) 60%, white);
+  color: var(--ink);
+  padding: 13px 14px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.field textarea,
+.review textarea {
+  resize: vertical;
+}
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible,
+.review textarea:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+.field [aria-invalid="true"] {
+  border-color: var(--clay);
+}
+.hint {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+.error {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--clay);
+  margin-top: 10px;
+}
+.errorSummary {
+  border-left: 2px solid var(--clay);
+  padding: 16px 20px;
+  margin-bottom: 30px;
+  color: var(--ink);
+}
+.errorSummary ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.errorSummary a {
+  display: inline-block;
+  padding: 5px 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prepare {
+  border: 0;
+  cursor: pointer;
+  margin-top: 18px;
+  font-family: inherit;
+}
+.review h3 {
+  font-size: 36px;
+  font-weight: 440;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+  margin: 22px 0;
+}
+.review > p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.review dl {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  padding: 24px 0;
+  border-top: 1px solid var(--mineral);
+  margin: 24px 0;
+}
+.review dt {
+  color: var(--muted);
+}
+.review dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.review textarea {
+  font-size: 15px;
+}
+.reviewActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+  margin: 24px 0;
+}
+.reviewActions button {
+  background: none;
+  border: 0;
+  padding: 8px 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+.copyActions {
+  display: flex;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+}
+.copyActions button {
+  color: var(--ink);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--mineral);
+  min-height: 44px;
+  padding: 8px 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+}
+.copyStatus {
+  min-height: 28px;
+  margin-top: 14px;
+}
+.direct {
+  margin-left: var(--inset);
+  padding: 32px 0 68px;
+  border-top: 1px solid var(--mineral);
+}
+.direct > p:first-child {
+  color: var(--muted);
+}
+.direct h2 {
+  font-weight: 430;
+  font-size: 32px;
+  letter-spacing: -0.04em;
+  margin: 20px 0 8px;
+}
+.direct a {
+  display: inline-flex;
+  align-items: center;
+  gap: 36px;
+  min-height: 48px;
+  font-size: 20px;
+}
+.direct > p:last-child {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 12px;
+}
+@media (max-width: 900px) {
+  .formLayout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .formNote {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+  }
+  .formNote > p:first-child {
+    grid-column: 1/-1;
+  }
+  .formNote > p:not(:first-child) {
+    grid-column: 1;
+  }
+  .deliveryNote {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    margin-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .hero .introduction {
+    margin: 28px 0 0;
+    font-size: 16px;
+  }
+  .conversation {
+    padding: 12px 0 48px 24px;
+  }
+  .conversationTitle {
+    font-size: 16px;
+  }
+  .choices {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .choices button {
+    padding: 22px 0 16px;
+  }
+  .choices strong {
+    font-size: 38px;
+    margin: 20px 0;
+  }
+  .choiceCopy {
+    min-height: 0;
+  }
+  .choiceAction {
+    margin-top: 14px;
+  }
+  .responseSignal {
+    width: calc(100% + 24px);
+    margin-left: -24px;
+    height: 70px;
+  }
+  .responseSignal path {
+    stroke-width: 1;
+  }
+  .formLayout {
+    padding-top: 28px;
+    gap: 32px;
+  }
+  .formNote {
+    display: block;
+  }
+  .formNote h2 {
+    font-size: 39px;
+  }
+  .deliveryNote {
+    margin-top: 26px;
+  }
+  .field {
+    margin-bottom: 26px;
+  }
+  .field label {
+    flex-wrap: wrap;
+    gap: 4px 16px;
+  }
+  .review h3 {
+    font-size: 32px;
+  }
+  .direct {
+    margin-left: 24px;
+    padding-bottom: 48px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .choices button::before,
+  .responseSignal g {
+    transition: none;
+  }
+}
+:global([data-motion="off"]) .responseSignal g,
+:global([data-motion="off"]) .choices button::before {
+  transition: none;
+}

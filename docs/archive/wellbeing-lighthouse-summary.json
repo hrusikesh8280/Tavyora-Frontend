@@ -1,0 +1,174 @@
+{
+  "date": "2026-09-24",
+  "mode": "Production build; Lighthouse simulated mobile; Chromium 153; all 12 current-phase runs retained",
+  "runs": [
+    {
+      "route": "/",
+      "batch": "initial",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1980.55,
+      "tbt_ms": 141,
+      "cls": 0,
+      "transfer_bytes": 240206
+    },
+    {
+      "route": "/",
+      "batch": "initial",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1871.54,
+      "tbt_ms": 100,
+      "cls": 0,
+      "transfer_bytes": 240206
+    },
+    {
+      "route": "/",
+      "batch": "initial",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1966.94,
+      "tbt_ms": 107,
+      "cls": 0,
+      "transfer_bytes": 240206
+    },
+    {
+      "route": "/technology",
+      "batch": "initial",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2420.64,
+      "tbt_ms": 96,
+      "cls": 0,
+      "transfer_bytes": 238322
+    },
+    {
+      "route": "/technology",
+      "batch": "initial",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2457.9,
+      "tbt_ms": 136,
+      "cls": 0,
+      "transfer_bytes": 238322
+    },
+    {
+      "route": "/technology",
+      "batch": "initial",
+      "scores": {
+        "performance": 72,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 3264.16,
+      "tbt_ms": 896,
+      "cls": 0,
+      "transfer_bytes": 238322
+    },
+    {
+      "route": "/wellbeing",
+      "batch": "initial",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1968.25,
+      "tbt_ms": 57,
+      "cls": 0,
+      "transfer_bytes": 277241
+    },
+    {
+      "route": "/wellbeing",
+      "batch": "initial",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1975.49,
+      "tbt_ms": 56,
+      "cls": 0,
+      "transfer_bytes": 277241
+    },
+    {
+      "route": "/wellbeing",
+      "batch": "initial",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1963.86,
+      "tbt_ms": 77,
+      "cls": 0,
+      "transfer_bytes": 277241
+    },
+    {
+      "route": "/technology",
+      "batch": "technology follow-up",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1858.02,
+      "tbt_ms": 111,
+      "cls": 0,
+      "transfer_bytes": 238322
+    },
+    {
+      "route": "/technology",
+      "batch": "technology follow-up",
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2172.89,
+      "tbt_ms": 294.56,
+      "cls": 0,
+      "transfer_bytes": 238322
+    },
+    {
+      "route": "/technology",
+      "batch": "technology follow-up",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2481.83,
+      "tbt_ms": 164,
+      "cls": 0,
+      "transfer_bytes": 238322
+    }
+  ]
+}

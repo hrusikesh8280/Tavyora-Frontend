@@ -1,0 +1,57 @@
+@media (min-width: 601px) and (max-width: 900px) {
+  .compact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    font-size: 12px;
+  }
+  .compact svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.footer {
+  margin-left: var(--inset);
+  padding: 28px 0 76px;
+  border-top: 1px solid var(--mineral);
+  font-size: 12px;
+}
+.footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.footer a:hover {
+  color: var(--clay);
+}
+.footer p {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+@media (max-width: 600px) {
+  .footer {
+    margin-left: 24px;
+    padding-bottom: 90px;
+  }
+  .footer > div {
+    gap: 8px;
+  }
+  .footer nav {
+    gap: 4px 24px;
+  }
+}

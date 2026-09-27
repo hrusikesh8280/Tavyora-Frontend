@@ -1,0 +1,47 @@
+{
+  "name": "tavyora-concepts",
+  "version": "1.2.1-human-rhythm",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "next typegen && tsc --noEmit",
+    "lint": "eslint .",
+    "smoke": "node scripts/smoke.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:a11y": "playwright test --grep axe",
+    "test:lighthouse": "lhci autorun",
+    "test:lighthouse:collect": "lhci collect",
+    "test:homepage": "playwright test homepage.spec.ts",
+    "assets:social": "node scripts/generate-social.mjs",
+    "test:technology": "playwright test technology.spec.ts",
+    "assets:technology-social": "node scripts/generate-technology-social.mjs",
+    "test:wellbeing": "playwright test wellbeing.spec.ts",
+    "assets:wellbeing-social": "node scripts/generate-wellbeing-social.mjs",
+    "test:about-contact": "playwright test about-contact.spec.ts"
+  },
+  "dependencies": {
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@lhci/cli": "^0.15.1",
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.6",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "packageManager": "bun@1.4.2"
+}

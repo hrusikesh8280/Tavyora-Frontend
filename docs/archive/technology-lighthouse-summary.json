@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-24",
+  "mode": "Production build; Lighthouse simulated mobile; local Chromium 153",
+  "runs": [
+    {
+      "route": "/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2432.44,
+      "tbt_ms": 99,
+      "cls": 0,
+      "transfer_bytes": 234004
+    },
+    {
+      "route": "/",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1829.16,
+      "tbt_ms": 98,
+      "cls": 0,
+      "transfer_bytes": 234004
+    },
+    {
+      "route": "/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2435.3,
+      "tbt_ms": 112,
+      "cls": 0,
+      "transfer_bytes": 234004
+    },
+    {
+      "route": "/technology",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 1981.38,
+      "tbt_ms": 100,
+      "cls": 0,
+      "transfer_bytes": 235568
+    },
+    {
+      "route": "/technology",
+      "scores": {
+        "performance": 91,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2533.76,
+      "tbt_ms": 308.0,
+      "cls": 0,
+      "transfer_bytes": 235568
+    },
+    {
+      "route": "/technology",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2407.14,
+      "tbt_ms": 90,
+      "cls": 0,
+      "transfer_bytes": 235568
+    }
+  ]
+}

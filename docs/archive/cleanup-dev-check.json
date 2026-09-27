@@ -1,0 +1,7 @@
+{
+  "command": "bun run dev --hostname 127.0.0.1 --port 3140",
+  "ready": true,
+  "status": 200,
+  "exitBeforeShutdown": null,
+  "log": "$ next dev --hostname 0.0.0.0 --hostname \"127.0.0.1\" --port \"3140\"\n\u25b2 Next.js 16.3.6 (Turbopack)\n- Local:         http://127.0.0.1:3140\n- Network:       http://127.0.0.1:3140\n\u2713 Ready in 1140ms\n\u2713 Running next.config.ts took 90ms\n\n\u25cb Compiling / ...\n"
+}

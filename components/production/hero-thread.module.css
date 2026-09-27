@@ -1,0 +1,43 @@
+/* Refines the signal only: the approved hero box metrics remain unchanged. */
+.thread {
+  position: relative;
+  overflow: visible;
+}
+.thread::before,
+.thread::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: var(--signal);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.thread::before {
+  left: 1.875%;
+  bottom: 100%;
+  height: clamp(150px, 17vw, 250px);
+}
+.thread::after {
+  right: 2.8125%;
+  top: 100%;
+  height: clamp(150px, 18vw, 250px);
+}
+.entrance {
+  stroke-width: 2;
+  stroke-dasharray: 0.1 0.9;
+  opacity: 0;
+}
+@media (max-width: 600px) {
+  .thread::before {
+    left: 8px;
+    height: 110px;
+  }
+  .thread::after {
+    right: auto;
+    left: 8px;
+    height: 16px;
+  }
+  .thread path[data-strand]:nth-child(n + 4) {
+    display: none;
+  }
+}
