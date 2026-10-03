@@ -3,12 +3,8 @@ import { Footer } from "../components/production/Footer";
 import { MotionProvider } from "../components/production/MotionProvider";
 import { Arrow } from "../components/shared/Arrow";
 import { HeroSignal, TransitionSignal } from "../components/production/Signal";
-import { Technology } from "../components/production/Technology";
-import {
-  capabilities,
-  projectHref,
-  yogaHref,
-} from "../components/production/content";
+import { ProductSystem } from "../components/enhancement/VisualGrammar";
+import { projectHref, yogaHref } from "../components/production/content";
 import s from "../components/production/system.module.css";
 import { homepageMetadata, homepageStructuredData } from "../lib/site";
 import { Navigation } from "../components/production/Navigation";
@@ -107,45 +103,9 @@ export default function Home() {
           >
             <Chapter number="02" label="TECHNOLOGY" />
             <div className={s.sectionIntro}>
-              <h2 id="technology-title">
-                Bring the problem.
-                <br />
-                <em>We’ll find the starting point.</em>
-              </h2>
-              <p>
-                Design and engineering, considered together.
-                <br />
-                What are you trying to solve?
-              </p>
+              <h2 id="technology-title">What needs to work better?</h2>
             </div>
-            <Technology>
-              <div className={s.capabilities} id="capabilities">
-                <div className={s.capabilityHeading}>
-                  <p className={s.eyebrow}>THE WORK BEHIND THE PATH</p>
-                  <h2>
-                    A connected set
-                    <br />
-                    of capabilities.
-                  </h2>
-                </div>
-                <div>
-                  {capabilities.map((c, i) => (
-                    <article
-                      key={c.id}
-                      data-capability={c.id}
-                      className={s.capability}
-                    >
-                      <span className={s.capNumber}>0{i + 1}</span>
-                      <div>
-                        <h3>{c.name}</h3>
-                        <p className={s.capNote}>{c.note}</p>
-                      </div>
-                      <p className={s.capItems}>{c.items}</p>
-                    </article>
-                  ))}
-                </div>
-              </div>
-            </Technology>
+            <ProductSystem />
           </section>
           <section className={s.transition} aria-label="Signal becomes breath">
             <TransitionSignal />
@@ -158,15 +118,11 @@ export default function Home() {
             <Chapter number="04" label="WELLBEING" />
             <div className={s.wellbeingIntro}>
               <p className={s.eyebrow}>A DIFFERENT PACE. THE SAME ATTENTION.</p>
-              <h2 id="wellbeing-title">
-                Room to move.
-                <br />
-                <em>Time to notice.</em>
-              </h2>
+              <h2 id="wellbeing-title">Online yoga at your pace.</h2>
               <p>
                 Online yoga led by a professionally qualified practitioner with
-                a master’s degree in the field. Clear instruction, considered
-                pacing and space to build a practice.
+                a master’s degree in yoga. Sessions allow time for questions and
+                guidance you can follow.
               </p>
             </div>
             <div className={s.practiceLayout}>
@@ -207,8 +163,8 @@ export default function Home() {
                   <span className={s.eyebrow}>02 / SHARED</span>
                   <h3>Small-group online yoga</h3>
                   <p>
-                    Guided online sessions with clear instruction, considered
-                    pacing and space to practise together.
+                    Follow guided movement with a small group, with time to
+                    understand the instruction and find your pace.
                   </p>
                 </article>
                 <a className={s.textLink} href={yogaHref}>
@@ -217,17 +173,13 @@ export default function Home() {
               </div>
             </div>
             <p className={s.practiceNote}>
-              Practice creates room to notice.
-              <br />
-              <em>Progress has its own pace.</em>
+              <em>Practice creates room to notice.</em>
             </p>
           </section>
           <HowWeWork />
           <section className={s.closing} aria-labelledby="closing-title">
             <Chapter number="06" label="A CONVERSATION" />
-            <h2 id="closing-title">
-              A useful <em>next step.</em>
-            </h2>
+            <h2 id="closing-title">What would you like to work on?</h2>
             <div className={s.closingPaths}>
               <a href={projectHref}>
                 <span className={s.eyebrow}>TECHNOLOGY</span>

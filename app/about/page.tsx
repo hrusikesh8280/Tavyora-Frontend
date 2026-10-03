@@ -10,7 +10,7 @@ export const metadata = editorialMetadata("about");
 const principles = [
   [
     "Understand before acting.",
-    "Start with the person, the problem and the context. A useful response begins with a better understanding of what is needed.",
+    "Ask what is difficult, who it affects and what has already been tried. Agree what needs attention before proposing a response.",
   ],
   [
     "Leave less in the way.",
@@ -73,11 +73,7 @@ export default function AboutPage() {
       <section className={s.section} aria-labelledby="what-title">
         <Chapter number="02" label="WHAT TAVYORA IS" />
         <div className={s.intro}>
-          <h2 id="what-title">
-            Independent by design.
-            <br />
-            <em>Human in its concerns.</em>
-          </h2>
+          <h2 id="what-title">An independent business in India.</h2>
           <div>
             <p>
               Tavyora is an independent business based in India, working across
@@ -85,9 +81,8 @@ export default function AboutPage() {
               practitioner-led online yoga.
             </p>
             <p>
-              These are two distinct practices. They share a name and an
-              operating standard: understand what is needed, explain the
-              decisions and pay attention to how the work is used.
+              The disciplines are distinct. In both, we ask what is needed,
+              explain our decisions and stay close to the people using the work.
             </p>
           </div>
         </div>
@@ -95,23 +90,18 @@ export default function AboutPage() {
       <section className={s.disciplines} aria-labelledby="disciplines-title">
         <Chapter number="03" label="TWO DISCIPLINES" />
         <h2 id="disciplines-title" className={s.sectionHeading}>
-          Room for <em>different kinds of work.</em>
+          Two disciplines, each with its own work.
         </h2>
         <div className={s.disciplineGrid}>
           <article>
             <span className={b.eyebrow}>A / TECHNOLOGY</span>
-            <h3>
-              Give an idea
-              <br />
-              <em>a working form.</em>
-            </h3>
+            <h3>Design and build useful software.</h3>
             <svg viewBox="0 0 480 100" fill="none" aria-hidden="true">
               <path d="M0 20H120L180 60H480M0 32H114L174 72H480M0 44H108L168 84H480" />
             </svg>
             <p>
-              Product thinking, design and engineering considered together.
-              Digital products, software systems and intelligent workflows that
-              people can use and operate.
+              Product design and engineering, from the interface to the software
+              and workflows behind it.
             </p>
             <p className={s.annotation}>STRUCTURED / DESIGNED / ENGINEERED</p>
             <Link className={b.textLink} href="/technology">
@@ -120,18 +110,13 @@ export default function AboutPage() {
           </article>
           <article>
             <span className={b.eyebrow}>B / WELLBEING</span>
-            <h3>
-              Give practice
-              <br />
-              <em>room to unfold.</em>
-            </h3>
+            <h3>Online yoga with personal guidance.</h3>
             <svg viewBox="0 0 480 100" fill="none" aria-hidden="true">
               <path d="M0 60C140 60 120 10 240 20S340 95 480 60M0 76C140 76 120 26 240 36S340 111 480 76" />
             </svg>
             <p>
               Practitioner-led online yoga, with one-to-one and small-group
-              sessions. Clear instruction, considered pacing and attention to
-              the person practising.
+              sessions. Instruction and pacing respond to the person practising.
             </p>
             <p className={s.annotation}>GUIDED / PACED / PRACTISED</p>
             <Link className={b.textLink} href="/wellbeing">
@@ -143,7 +128,7 @@ export default function AboutPage() {
       <section className={s.section} aria-labelledby="principles-title">
         <Chapter number="04" label="A SHARED STANDARD" />
         <h2 className={s.sectionHeading} id="principles-title">
-          Care is in <em>the decisions.</em>
+          How we make decisions.
         </h2>
         <ol className={s.principles}>
           {principles.map(([title, copy], i) => (
@@ -162,11 +147,7 @@ export default function AboutPage() {
       >
         <Chapter number="05" label="HOW WE WORK" />
         <div className={s.intro}>
-          <h2 id="work-title">
-            Direct conversations.
-            <br />
-            <em>Deliberate work.</em>
-          </h2>
+          <h2 id="work-title">Direct conversations, clear responsibilities.</h2>
           <div>
             <p>
               Work starts by making the situation clearer. We discuss the need,
@@ -187,11 +168,7 @@ export default function AboutPage() {
       <section className={s.section} aria-labelledby="current-title">
         <Chapter number="06" label="CURRENTLY AT TAVYORA" />
         <div className={s.current}>
-          <h2 id="current-title">
-            The work,
-            <br />
-            <em>as it stands.</em>
-          </h2>
+          <h2 id="current-title">What we offer today.</h2>
           <ol>
             {[
               "Technology consultancy",

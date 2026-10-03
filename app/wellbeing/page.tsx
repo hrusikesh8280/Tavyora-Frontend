@@ -110,11 +110,7 @@ export default function WellbeingPage() {
               <div className={s.practiceGrid}>
                 <div>
                   <p className={b.eyebrow}>LESS TO PROVE. MORE TO NOTICE.</p>
-                  <h2 id="practice-title">
-                    Clear guidance.
-                    <br />
-                    <em>Space to be yourself.</em>
-                  </h2>
+                  <h2 id="practice-title">Guidance without pressure.</h2>
                   <p className={s.lead}>
                     You do not need an impressive pose to begin. Start with what
                     feels manageable, and ask questions along the way.
@@ -164,21 +160,15 @@ export default function WellbeingPage() {
                     Mat, cloth and wood.
                   </figcaption>
                   <p className={s.imageLine}>
-                    A little room.
-                    <br />
                     <em>A place to begin.</em>
                   </p>
                 </figure>
                 <div className={s.individualCopy}>
-                  <h2 id="individual-title">
-                    One person.
-                    <br />
-                    <em>A practice of your own.</em>
-                  </h2>
+                  <h2 id="individual-title">Sessions shaped around you.</h2>
                   <p className={s.lead}>
                     Individual guided online sessions shaped around your
-                    experience, pace and practical goals. Discuss your pace,
-                    comfort boundaries and available time with the practitioner.
+                    experience and practical goals. Discuss your comfort
+                    boundaries and available time with the practitioner.
                   </p>
                   <dl className={s.qualities}>
                     {individualQualities.map(([title, copy], i) => (
@@ -208,11 +198,7 @@ export default function WellbeingPage() {
                   <p className={b.eyebrow}>
                     A SHARED SESSION. YOUR OWN EXPERIENCE.
                   </p>
-                  <h2 id="group-title">
-                    Practise together.
-                    <br />
-                    <em>Keep your own pace.</em>
-                  </h2>
+                  <h2 id="group-title">Practise with a small group.</h2>
                 </div>
                 <div className={s.groupCopy}>
                   <p className={s.lead}>
@@ -252,11 +238,7 @@ export default function WellbeingPage() {
             >
               <Chapter number="05" label="THE RHYTHM OF A SESSION" />
               <div className={s.sectionIntro}>
-                <h2 id="session-title">
-                  A session has
-                  <br />
-                  <em>room between moments.</em>
-                </h2>
+                <h2 id="session-title">How a session can unfold.</h2>
                 <p>
                   A sense of the experience, rather than a fixed sequence. Each
                   session can take a different shape.
@@ -288,9 +270,7 @@ export default function WellbeingPage() {
                 </div>
                 <div className={s.practitionerCopy}>
                   <h2 id="practitioner-title">
-                    Guided by study.
-                    <br />
-                    <em>Led with attention.</em>
+                    Your practitioner’s grounding.
                   </h2>
                   <p className={s.lead}>
                     Tavyora’s online yoga practice is guided by a professionally
@@ -326,11 +306,7 @@ export default function WellbeingPage() {
               <Chapter number="08" label="IS THIS FOR YOU?" />
               <div className={s.fitGrid}>
                 <div>
-                  <h2 id="fit-title">
-                    Begin with
-                    <br />
-                    <em>your circumstances.</em>
-                  </h2>
+                  <h2 id="fit-title">Is this a good fit for you?</h2>
                   <p className={s.lead}>
                     These may be useful starting points for a conversation.
                     Suitability depends on the individual, not just the format.
@@ -357,11 +333,7 @@ export default function WellbeingPage() {
               aria-labelledby="closing-title"
             >
               <p className={b.eyebrow}>09 / THE FIRST STEP</p>
-              <h2 id="closing-title">
-                Begin with
-                <br />
-                <em>a conversation.</em>
-              </h2>
+              <h2 id="closing-title">Ask about a session.</h2>
               <p>
                 Tell us a little about your experience, what you would like from
                 practice and whether you prefer individual or small-group

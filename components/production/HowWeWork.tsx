@@ -7,7 +7,7 @@ const principles = [
     copy: "Agree what needs attention, what can wait and what a useful outcome looks like. A clear question is a better starting point than a long feature list.",
   },
   {
-    title: "Keep the thinking connected.",
+    title: "Work through the trade-offs.",
     copy: "Consider design, engineering and day-to-day use together. Make the trade-offs visible before they become expensive decisions.",
   },
   {
@@ -26,11 +26,7 @@ export function HowWeWork() {
       <div className={h.workIntro}>
         <div>
           <p className={s.eyebrow}>INDEPENDENT. DIRECT. DELIBERATE.</p>
-          <h2 id="how-title">
-            Direct conversations.
-            <br />
-            <em>Considered work.</em>
-          </h2>
+          <h2 id="how-title">Work directly with Tavyora.</h2>
         </div>
         <p>
           Tavyora is an independent practice. Technology projects begin with the

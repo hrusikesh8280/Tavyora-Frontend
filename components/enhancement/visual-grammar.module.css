@@ -1,0 +1,986 @@
+.grammar {
+  --signal: var(--clay, #964630);
+  --paper: var(--bone, #f3efe6);
+  --ink: #282e2d;
+  --muted: #625d55;
+  --rule: #c5bfb3;
+  color: var(--ink);
+  border-top: 1px solid var(--rule);
+  margin: 40px 0 64px;
+  overflow: hidden;
+}
+.studyTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+.selector {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--rule);
+}
+.selector button {
+  appearance: none;
+  border: 0;
+  border-top: 2px solid transparent;
+  background: none;
+  min-height: 88px;
+  text-align: left;
+  padding: 16px 12px 16px 0;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 7px;
+  font-size: 22px;
+  transition:
+    color 180ms,
+    border-color 180ms;
+}
+.selector button > span:first-child {
+  font-size: 11px;
+  padding-top: 6px;
+}
+.selector button[aria-pressed="true"] {
+  color: var(--signal);
+  border-top-color: var(--signal);
+}
+.selector button:hover {
+  color: var(--signal);
+}
+.verb {
+  font-size: 12px;
+  grid-column: 2;
+  color: var(--muted);
+}
+.diagram {
+  position: relative;
+  height: 480px;
+  margin: 20px 0 0;
+}
+.routes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  overflow: visible;
+}
+.guide {
+  stroke: var(--rule);
+  stroke-width: 1;
+  fill: none;
+  opacity: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+.trace {
+  stroke: var(--signal);
+  stroke-width: 1.5;
+  fill: none;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  vector-effect: non-scaling-stroke;
+}
+.node {
+  background: linear-gradient(transparent 18px, var(--paper) 18px);
+  position: absolute;
+  width: 19%;
+  padding: 24px 0 0;
+  transform: translateX(-3px);
+  transition: opacity 400ms;
+  color: var(--ink);
+  opacity: 1;
+}
+.node[data-active="true"] {
+  opacity: 1;
+}
+.port {
+  position: absolute;
+  left: -3px;
+  top: -5px;
+  width: 9px;
+  height: 9px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  transform: rotate(45deg);
+}
+.node[data-active="true"] .port {
+  border-color: var(--signal);
+  background: var(--signal);
+}
+.nodeIndex {
+  font-size: 10px;
+  color: var(--muted);
+}
+.node h3 {
+  font-size: clamp(15px, 1.65vw, 24px);
+  font-weight: 500;
+  margin: 6px 0;
+}
+.node p {
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 130px;
+}
+.optional {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 0.05em;
+  margin-top: 9px;
+}
+.layerOutline {
+  position: absolute;
+  left: 32%;
+  top: 13%;
+  width: 61%;
+  height: 76%;
+  border: 1px solid var(--rule);
+  border-left: 0;
+  border-radius: 0 0 70px 0;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.detour {
+  fill: none;
+  stroke: var(--signal);
+  stroke-width: 1;
+  stroke-dasharray: 4 6;
+  animation: removeDetour 1100ms ease-out both;
+  vector-effect: non-scaling-stroke;
+}
+@keyframes removeDetour {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.07;
+  }
+}
+.explanation {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 16px;
+  border-top: 1px solid var(--rule);
+  padding: 24px 0;
+  min-height: 140px;
+}
+.stateMark {
+  font-size: 36px;
+  color: var(--signal);
+}
+.explanation h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0 0 10px;
+}
+.explanation p {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 560px;
+  color: var(--muted);
+}
+.illustrative {
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.capabilityLegend {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 24px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+}
+.capabilityLegend b {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.studyHeading {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 20px 0 40px;
+}
+.studyHeading h3 {
+  font-size: clamp(28px, 3.4vw, 48px);
+  line-height: 1.12;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+.studyHeading em {
+  font-family: PlexSerif, serif;
+  font-weight: 400;
+}
+.studyHeading > p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 340px;
+  align-self: end;
+}
+.buildLayout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+}
+.buildControls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.buildControls li {
+  border-top: 1px solid var(--rule);
+  padding: 0 0 16px;
+}
+.buildControls button {
+  display: grid;
+  grid-template-columns: 30px 1fr 24px;
+  align-items: center;
+  text-align: left;
+  min-height: 52px;
+  border: 0;
+  background: none;
+  width: 100%;
+  color: var(--ink);
+}
+.buildControls strong {
+  font-size: 20px;
+  font-weight: 400;
+}
+.buildControls button > span {
+  font-size: 12px;
+}
+.buildControls button[aria-pressed="true"] {
+  color: var(--signal);
+}
+.buildControls p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  padding-left: 30px;
+}
+.assembly {
+  position: relative;
+  min-height: 600px;
+  border-left: 1px solid var(--rule);
+}
+.assemblyRoutes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  fill: none;
+}
+.assemblyLayer {
+  position: absolute;
+  padding: 12px 16px;
+  border-top: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--muted);
+  opacity: 1;
+  transform: translateY(6px);
+  transition:
+    opacity 600ms ease,
+    transform 800ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 200ms;
+}
+.assemblyLayer[data-built="true"] {
+  color: var(--ink);
+  opacity: 1;
+  transform: translateY(0);
+  border-color: var(--signal);
+}
+.assemblyLayer span {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 8px;
+}
+.assemblyLayer strong {
+  font-size: clamp(17px, 2vw, 25px);
+  font-weight: 400;
+}
+.assemblyLayer i {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  width: 7px;
+  height: 7px;
+  background: var(--rule);
+}
+.assemblyLayer[data-current="true"] i {
+  background: var(--signal);
+}
+.assemblyFooter {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 0;
+  font-size: 10px;
+}
+.assemblyFooter strong {
+  font-weight: 500;
+}
+.informationFlow {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1.15fr 0.8fr;
+  gap: 28px;
+  padding: 25px 0 35px;
+  min-height: 400px;
+}
+.flowRoutes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  fill: none;
+}
+.informationFlow > div {
+  position: relative;
+  min-width: 0;
+}
+.smallLabel {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  min-height: 44px;
+}
+.informationFlow p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 20px;
+}
+.fragments {
+  height: 200px;
+  position: relative;
+}
+.fragments i {
+  position: absolute;
+  width: 70%;
+  height: 96px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 12px;
+  font-size: 10px;
+  font-style: normal;
+  transform: rotate(-5deg);
+  left: 4%;
+  top: 0;
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.fragments i:nth-child(2) {
+  top: 38px;
+  left: 19%;
+  transform: rotate(4deg);
+}
+.fragments i:nth-child(3) {
+  top: 77px;
+  left: 1%;
+  transform: rotate(-2deg);
+}
+.fragments i:nth-child(4) {
+  top: 111px;
+  left: 23%;
+  transform: rotate(5deg);
+}
+.fragments i span {
+  display: block;
+  height: 1px;
+  background: var(--rule);
+  margin-top: 9px;
+  width: 80%;
+}
+.fragments i span:nth-child(2) {
+  width: 50%;
+}
+[data-phase="1"] .fragments i,
+[data-phase="2"] .fragments i {
+  transform: rotate(0);
+}
+.recordSheet {
+  background: var(--paper);
+  border-top: 2px solid var(--signal);
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 0;
+  min-height: 200px;
+}
+.recordSheet > div {
+  font-size: 9px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.05em;
+}
+.recordSheet dl {
+  margin: 16px 0;
+}
+.recordSheet dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid var(--rule);
+  padding: 11px 0;
+  font-size: 11px;
+}
+.recordSheet dd {
+  margin: 0;
+}
+.recordSheet dt {
+  color: var(--muted);
+}
+.sample {
+  font-size: 9px;
+  color: var(--muted);
+}
+.gate {
+  background: var(--paper);
+  border-left: 2px solid var(--signal);
+  min-height: 200px;
+  padding: 20px;
+}
+.gate > span {
+  display: block;
+  color: var(--signal);
+  font-family: PlexSerif, serif;
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+.gate strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+.gate p {
+  margin-top: 10px;
+}
+.actionPort {
+  display: block;
+  margin-top: 42px;
+  font-size: 44px;
+  color: var(--muted);
+}
+.action[data-ready="true"] .actionPort {
+  color: var(--signal);
+}
+.action strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 16px 0;
+}
+.flowControls {
+  display: flex;
+  gap: 16px;
+  border-top: 1px solid var(--rule);
+  padding-top: 24px;
+}
+.flowControls button {
+  background: none;
+  min-height: 48px;
+  border: 1px solid var(--rule);
+  padding: 12px 18px;
+  font-size: 13px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  text-align: left;
+}
+.flowControls button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.flowStatus {
+  font-size: 12px;
+  color: var(--muted);
+  min-height: 64px;
+  max-width: 680px;
+  line-height: 1.7;
+  padding: 20px 0;
+}
+@media (max-width: 900px) {
+  .studyHeading {
+    display: block;
+  }
+  .studyHeading > p {
+    margin-top: 20px;
+  }
+  .buildLayout {
+    gap: 20px;
+    grid-template-columns: 1fr 1.2fr;
+  }
+  .diagram {
+    height: 400px;
+  }
+  .explanation {
+    grid-template-columns: 32px 1fr;
+  }
+  .illustrative {
+    grid-column: 2;
+  }
+  .informationFlow {
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .flowRoutes {
+    display: none;
+  }
+  .sources,
+  .record {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 20px;
+  }
+  .smallLabel {
+    font-size: 10px;
+  }
+  .action {
+    padding-left: 20px;
+    border-left: 1px solid var(--signal);
+  }
+}
+@media (max-width: 600px) {
+  .grammar {
+    margin: 24px 0 40px;
+  }
+  .studyTop {
+    font-size: 9px;
+  }
+  .selector {
+    grid-template-columns: 1fr 1fr;
+  }
+  .selector button {
+    font-size: 19px;
+    min-height: 76px;
+  }
+  .diagram {
+    height: auto;
+    min-height: 0;
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 22px;
+  }
+  .diagram .routes,
+  .layerOutline {
+    display: none;
+  }
+  .node {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: auto;
+    transform: none;
+    border-left: 1px solid var(--rule);
+    padding: 16px 0 20px 15px;
+    opacity: 1;
+  }
+  .node[data-active="true"] {
+    border-color: var(--signal);
+  }
+  .port {
+    top: 25px;
+    left: -4px;
+    width: 7px;
+    height: 7px;
+  }
+  .node h3 {
+    font-size: 19px;
+  }
+  .node p {
+    font-size: 12px;
+    max-width: none;
+  }
+  .optional {
+    font-size: 8px;
+  }
+  .nodeIndex {
+    display: none;
+  }
+  .node:last-child {
+    grid-column: 1/-1;
+  }
+  .explanation h3 {
+    font-size: 20px;
+  }
+  .explanation {
+    padding: 20px 0;
+  }
+  .capabilityLegend {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+  .buildLayout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .assembly {
+    min-height: 480px;
+  }
+  .assemblyFooter {
+    font-size: 9px;
+  }
+  .buildControls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 18px;
+  }
+  .buildControls button {
+    grid-template-columns: 23px 1fr 16px;
+  }
+  .buildControls strong {
+    font-size: 17px;
+  }
+  .buildControls p {
+    padding-left: 0;
+  }
+  .studyHeading {
+    margin-bottom: 25px;
+  }
+  .informationFlow {
+    gap: 20px 18px;
+  }
+  .informationFlow p {
+    font-size: 12px;
+  }
+  .recordSheet dl > div {
+    font-size: 10px;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 0;
+  }
+  .recordSheet {
+    min-height: 225px;
+  }
+  .fragments {
+    height: 225px;
+  }
+  .gate {
+    padding: 12px;
+    min-height: 210px;
+  }
+  .flowControls {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .flowControls button {
+    font-size: 14px;
+    min-height: 52px;
+  }
+  .smallLabel {
+    font-size: 8px;
+  }
+  .assemblyLayer strong {
+    font-size: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .grammar * {
+    animation: none !important;
+    transition: none !important;
+  }
+  .detour {
+    opacity: 0.07;
+  }
+  .assemblyLayer {
+    transform: none;
+  }
+}
+
+[data-mode="build"] .node {
+  animation: assemble 850ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes assemble {
+  from {
+    transform: translate(-3px, 10px);
+    opacity: 0.2;
+  }
+  to {
+    transform: translate(-3px, 0);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-mode="build"] .node {
+    animation: none !important;
+  }
+}
+
+.layerGlyph {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  width: 64px;
+  height: 18px;
+  fill: none;
+  stroke: var(--signal);
+  stroke-width: 1;
+}
+.layerGlyph path {
+  vector-effect: non-scaling-stroke;
+}
+/* Signal disappears beneath readable labels, then resumes in the whitespace. */
+.informationFlow p {
+  position: relative;
+  background: var(--paper);
+}
+.action strong {
+  position: relative;
+  background: var(--paper);
+  width: fit-content;
+  padding-right: 8px;
+}
+
+/* Homepage control points: choice → capture → existing product system. */
+.controlSystem {
+  position: relative;
+  overflow: visible;
+}
+.invitation {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 8px 0 24px;
+  color: var(--ink);
+}
+.controlChoices {
+  position: relative;
+  gap: 20px;
+  border: 0;
+}
+.controlChoices button {
+  position: relative;
+  cursor: pointer;
+  font: inherit;
+  color: var(--muted);
+  min-height: 132px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 19px 30px 20px 4px;
+  grid-template-columns: 23px minmax(0, 1fr);
+  gap: 9px;
+  background: transparent;
+  transition:
+    background-color 160ms,
+    color 160ms,
+    border-color 160ms;
+}
+.controlChoices button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 32px;
+  height: 2px;
+  background: var(--signal);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms;
+}
+.controlText {
+  display: block;
+}
+.controlText strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 450;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  transition:
+    transform 180ms,
+    color 160ms;
+}
+.controlText > span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.65;
+  margin-top: 12px;
+  color: var(--muted);
+  max-width: 190px;
+}
+.controlChoices .controlNumber {
+  padding-top: 5px;
+  font-size: 11px;
+}
+.controlNode {
+  position: absolute;
+  right: 12px;
+  bottom: 23px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--muted);
+  background: var(--paper);
+  transition:
+    background 160ms,
+    border-color 160ms;
+}
+.controlCue {
+  position: absolute;
+  right: 9px;
+  top: 18px;
+  font-size: 17px;
+  color: var(--signal);
+  opacity: 0;
+  transition: opacity 160ms;
+}
+.controlChoices button[aria-pressed="true"] {
+  color: var(--signal);
+  border-top-color: var(--rule);
+  background: color-mix(in srgb, var(--signal) 3%, transparent);
+}
+.controlChoices button[aria-pressed="true"]::before {
+  transform: scaleX(1);
+}
+.controlChoices button[aria-pressed="true"] .controlNode {
+  background: var(--signal);
+  border-color: var(--signal);
+}
+.controlChoices button[aria-pressed="true"] .controlCue {
+  opacity: 1;
+}
+.controlChoices button:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 5px;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--signal) 4%, transparent);
+  border-bottom-color: var(--signal);
+}
+.controlChoices button:focus-visible .controlText strong {
+  transform: translateX(3px);
+}
+.controlChoices button:focus-visible .controlNode {
+  background: var(--signal);
+  border-color: var(--signal);
+}
+.controlChoices button:focus-visible .controlCue {
+  opacity: 1;
+}
+@media (hover: hover) and (pointer: fine) {
+  .controlChoices button:hover {
+    color: var(--ink);
+    background: color-mix(in srgb, var(--signal) 4%, transparent);
+    border-bottom-color: var(--signal);
+  }
+  .controlChoices button:hover .controlText strong {
+    transform: translateX(3px);
+  }
+  .controlChoices button:hover .controlNode {
+    background: var(--signal);
+    border-color: var(--signal);
+  }
+  .controlChoices button:hover .controlCue {
+    opacity: 1;
+  }
+}
+.controlChoices button:active .controlText strong {
+  transform: translateX(1px);
+}
+.controlSystem .diagram {
+  margin-top: 64px;
+}
+.capture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 1;
+}
+.capture path {
+  fill: none;
+  stroke: var(--signal);
+  stroke-width: 1.3;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.controlSystem .port {
+  transition:
+    box-shadow 160ms,
+    border-color 160ms,
+    background 160ms;
+}
+.controlSystem .node[data-preview="true"] .port {
+  box-shadow:
+    0 0 0 3px var(--paper),
+    0 0 0 4px var(--signal);
+}
+.controlSystem .detour {
+  animation-delay: 300ms;
+  animation-duration: 800ms;
+}
+.controlSystem .explanation {
+  min-height: 160px;
+}
+@media (max-width: 900px) and (min-width: 601px) {
+  .controlChoices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 28px;
+  }
+  .controlChoices button {
+    min-height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .controlChoices {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-right: 24px;
+  }
+  .controlChoices button {
+    width: 100%;
+    min-height: 104px;
+    padding: 20px 35px 19px 4px;
+    grid-template-columns: 24px minmax(0, 1fr);
+    border-bottom: 0;
+  }
+  .controlChoices button:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+  .controlText strong {
+    font-size: 24px;
+  }
+  .controlText > span {
+    font-size: 13px;
+    margin-top: 7px;
+    max-width: none;
+  }
+  .controlNode {
+    right: 12px;
+    bottom: 27px;
+  }
+  .controlCue {
+    top: 20px;
+  }
+  .controlSystem .diagram {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .controlSystem .explanation {
+    min-height: 260px;
+  }
+  .invitation {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .controlChoices button:hover .controlText strong,
+  .controlChoices button:focus-visible .controlText strong,
+  .controlChoices button:active .controlText strong {
+    transform: none;
+  }
+}

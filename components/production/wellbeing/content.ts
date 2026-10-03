@@ -6,7 +6,7 @@ export const principles = [
     "Know what to do and have room to ask questions. There is no need to perform for the camera.",
   ],
   [
-    "A pace worth paying attention to.",
+    "Time to follow the movement.",
     "Leave time to notice the movement and communicate what feels comfortable. Intensity is not the measure of a useful session.",
   ],
   [
@@ -24,7 +24,7 @@ export const individualQualities = [
     "Clear instruction and the opportunity to ask questions as you practise.",
   ],
   [
-    "Considered progression",
+    "Clear next steps",
     "A starting point and next steps shaped around your practical goals.",
   ],
   [
@@ -55,5 +55,5 @@ export const fit = [
   "You are returning after a break.",
   "You prefer individual guidance in an online setting.",
   "You enjoy the rhythm of a smaller, guided group.",
-  "You want considered pacing rather than a high-intensity class.",
+  "You prefer time to follow the instruction over a high-intensity class.",
 ];
