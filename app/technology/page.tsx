@@ -5,11 +5,14 @@ import { MotionProvider } from "../../components/production/MotionProvider";
 import { Chapter } from "../../components/production/Chapter";
 import { Arrow } from "../../components/shared/Arrow";
 import { projectHref } from "../../components/production/content";
-import { Routing } from "../../components/production/technology/Routing";
-import { Journey } from "../../components/production/technology/Journey";
 import {
-  capabilities,
-  stages,
+  ProblemHero,
+  DiagnosticStage,
+  CapabilityAnatomy,
+  OperationStory,
+} from "../../components/enhancement/TechnologyStory";
+import v from "../../components/enhancement/technology-story.module.css";
+import {
   situations,
   engagements,
 } from "../../components/production/technology/content";
@@ -82,30 +85,17 @@ export default function TechnologyPage() {
               <span>01 / TECHNOLOGY AT TAVYORA</span>
               <span>FROM THE QUESTION TO THE WORKING SYSTEM</span>
             </div>
-            <h1 id="technology-hero">
-              Bring the problem, <em>not a perfect brief.</em>
-            </h1>
-            <svg
-              className={s.heroRoute}
-              viewBox="0 0 1280 100"
-              preserveAspectRatio="none"
-              fill="none"
-              aria-hidden="true"
-            >
-              {Array.from({ length: 6 }, (_, i) => (
-                <path
-                  key={i}
-                  d={`M24 0V${20 + i * 9}H${180 + i * 32}V${72 + i * 4}H${1190 + i * 8}V100`}
-                />
-              ))}
-            </svg>
-            <div className={s.heroBottom}>
-              <p>
-                Tavyora brings product thinking, experience design and software
-                engineering together. From web and mobile applications to
-                intelligent workflows and the systems underneath them.
+            <div className={v.heroComposition}>
+              <h1 id="technology-hero">
+                Bring the problem, <em>not a perfect brief.</em>
+              </h1>
+              <ProblemHero />
+              <p className={v.heroDescription}>
+                Tavyora connects product design, software engineering and
+                intelligent workflows. Start with what is difficult. We can work
+                out the system together.
               </p>
-              <div className={s.actions}>
+              <div className={`${s.actions} ${v.heroActions}`}>
                 <a href={projectHref} className={b.primary}>
                   Start a technology conversation <Arrow diagonal />
                 </a>
@@ -122,17 +112,9 @@ export default function TechnologyPage() {
           >
             <Chapter number="02" label="FIND YOUR STARTING POINT" />
             <div className={s.intro}>
-              <h2 id="problems-title">
-                What are you
-                <br />
-                <em>trying to solve?</em>
-              </h2>
-              <p>
-                You might need a whole product or one part of a system to work
-                better. Start with the situation closest to yours.
-              </p>
+              <h2 id="problems-title">What needs to work better?</h2>
             </div>
-            <Routing />
+            <DiagnosticStage />
           </section>
           <section
             className={s.section}
@@ -141,11 +123,7 @@ export default function TechnologyPage() {
           >
             <Chapter number="03" label="HOW WE APPROACH IT" />
             <div className={s.intro}>
-              <h2 id="approach-title">
-                Understand first.
-                <br />
-                <em>Build deliberately.</em>
-              </h2>
+              <h2 id="approach-title">Understand before building.</h2>
               <p>
                 The right starting point is not always more software. It may be
                 a clearer scope, a simpler workflow or a focused repair.
@@ -168,36 +146,14 @@ export default function TechnologyPage() {
             <Chapter number="04" label="THE CAPABILITY SYSTEM" />
             <div className={s.intro}>
               <h2 id="capabilities-title">
-                Different disciplines.
-                <br />
-                <em>Connected thinking.</em>
+                One product needs more than one discipline.
               </h2>
               <p>
-                Choose the capabilities the problem needs. Design decisions,
-                application behaviour and technical foundations belong in the
-                same picture.
+                Design, engineering and information work overlap. A review can
+                start at any layer.
               </p>
             </div>
-            <div className={s.capabilities}>
-              {capabilities.map((c, i) => (
-                <article
-                  className={s.capability}
-                  id={`capability-${c.id}`}
-                  key={c.id}
-                >
-                  <span className={s.number}>0{i + 1}</span>
-                  <div>
-                    <h3>{c.name}</h3>
-                    <p>{c.line}</p>
-                  </div>
-                  <ul>
-                    {c.items.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </article>
-              ))}
-            </div>
+            <CapabilityAnatomy />
           </section>
           <section
             className={s.section}
@@ -206,36 +162,18 @@ export default function TechnologyPage() {
           >
             <Chapter number="05" label="FROM IDEA TO OPERATION" />
             <div className={s.intro}>
-              <h2 id="journey-title">
-                Follow the work.
-                <br />
-                <em>Not a fixed formula.</em>
-              </h2>
+              <h2 id="journey-title">Make the next step clearer.</h2>
               <p>
-                A project can enter at any stage. We agree which steps matter,
-                where your team is already equipped and what should happen next.
+                Start where you need help. Agree the useful steps, then make
+                progress visible.
               </p>
             </div>
-            <Journey>
-              <ol className={s.stages}>
-                {stages.map(([name, copy], i) => (
-                  <li key={name} className={s.stage} data-stage>
-                    <span>0{i + 1}</span>
-                    <h3>{name}</h3>
-                    <p>{copy}</p>
-                  </li>
-                ))}
-              </ol>
-            </Journey>
+            <OperationStory />
           </section>
           <section className={s.section} id="fit" aria-labelledby="fit-title">
             <Chapter number="06" label="WHEN TAVYORA IS USEFUL" />
             <div className={s.intro}>
-              <h2 id="fit-title">
-                Does any of this
-                <br />
-                <em>sound familiar?</em>
-              </h2>
+              <h2 id="fit-title">Does this sound familiar?</h2>
             </div>
             <div className={s.fit}>
               <ul>
@@ -262,11 +200,7 @@ export default function TechnologyPage() {
           >
             <Chapter number="07" label="HOW AN ENGAGEMENT CAN START" />
             <div className={s.intro}>
-              <h2 id="engagements-title">
-                A clear next step.
-                <br />
-                <em>A considered scope.</em>
-              </h2>
+              <h2 id="engagements-title">Start with a manageable scope.</h2>
               <p>
                 Begin with a conversation about the problem, constraints and
                 desired outcome. Agree the work and responsibilities before

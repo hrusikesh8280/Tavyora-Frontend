@@ -14,7 +14,7 @@ Photograph the same consenting adult: seated arrival, gentle grounded movement, 
 - Practice-space640/1200: app/page.tsx and app/wellbeing/page.tsx.
 - Three social PNGs: lib metadata modules; deterministic scripts/generate-*-social.mjs preserve their generation source.
 - Inter variable + Plex Serif normal/italic are declared in globals.css; Inter and italic serif are preloaded by production shells. PlexMono was used only by deleted concepts and removed. Licence texts remain.
-- Brand icon: app/icon.svg (not below public).
+- Brand icons: `app/icon.png` (96×96) and `app/apple-icon.png` (180×180), generated from the existing geometric t mark. The automatic SVG icon was removed to avoid competing favicon references.
 
 | File | Bytes |
 | --- | ---: |
@@ -71,3 +71,21 @@ All entries below are temporary AI-generated editorial studies, not documentary 
 | `public/images/practice-space-1200.webp` | `/` and `/wellbeing`, daylight/material context | Temporary AI still life; real mat, cloth and block in natural window light. Not a venue claim. |
 
 Keep one subject, wardrobe, room and light for the four-state sequence. Photograph wide and vertical/mobile-safe compositions, with honest skin and fabric texture. No child offering is implied. Broader adult representation may be explored separately later. Font licences and social assets are retained; three 1200×630 social images are brand graphics, not documentary photographs. About, Contact and legal pages intentionally reuse the general brand image.
+
+
+## V1.1 identity and editorial craft
+
+The session-study files listed above are unchanged source assets. A scoped SVG filter on each rendered figure uses sixteen warm-neutral ink values, with a 0.32px edge softening, multiply compositing and restrained aperture grain. The same treatment applies to all four states. Existing architectural masks, foreground/background signals, natural-light states, responsive sizes, lazy loading and deliberate selection remain unchanged. This is a print-like editorial representation, not evidence of a real session. It does not identify the practitioner or a customer. No public provenance labels were added.
+
+The practice-space still-life pair retains its existing monochrome treatment. Its material/environmental role makes no identity or venue claim. The inventory remains 16 responsive figure files (four scenes × four widths) and two responsive still-life files. No new image downloads were added to the wellbeing page.
+
+The current generated subject is fictional. References to a consenting subject in the replacement column describe the FUTURE authentic photoshoot, not the generated source. Photograph the same consenting adult across seated arrival, gentle directional movement, open seated breath and settled close, in one wardrobe/room/light. Capture wide and mobile-safe crops. Replace still lifes with actual mat/material/window-light detail. Obtain written usage permissions; keep records internally. Final visual and asset-rights approval remains with the owner.
+
+### Stable raster identity
+
+- `app/icon.png`: 96×96 PNG, browser/search icon.
+- `app/apple-icon.png`: 180×180 PNG, Apple touch icon.
+- Dark ink, bone geometric t, restrained rust terminal; no full wordmark.
+- Generator: `scripts/generate-identity.mjs`; uses sharp already present through Next.js. No new production dependency.
+- Existing `app/icon.svg` removed. No extra ICO/manual icon declarations: one primary automatic icon reference, plus Apple icon.
+- Keep these paths stable after release. Search-result refresh and display are controlled by the search engine, not this branch.

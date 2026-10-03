@@ -127,11 +127,7 @@ export function Enquiry() {
           onClick={() => select("technology")}
         >
           <span className={b.eyebrow}>01 / TECHNOLOGY</span>
-          <strong>
-            Build, improve
-            <br />
-            <em>or untangle.</em>
-          </strong>
+          <strong>Build or improve a product.</strong>
           <span className={s.choiceCopy}>
             Have a product, workflow or technical question in mind?
           </span>
@@ -145,11 +141,7 @@ export function Enquiry() {
           onClick={() => select("wellbeing")}
         >
           <span className={b.eyebrow}>02 / WELLBEING</span>
-          <strong>
-            Make room
-            <br />
-            <em>for practice.</em>
-          </strong>
+          <strong>Ask about online yoga.</strong>
           <span className={s.choiceCopy}>
             Interested in one-to-one or small-group online yoga?
           </span>
@@ -177,17 +169,9 @@ export function Enquiry() {
           <p className={b.eyebrow}>03 / A LITTLE CONTEXT</p>
           <h2>
             {path === "technology" ? (
-              <>
-                Start where
-                <br />
-                <em>you are.</em>
-              </>
+              <>Tell us about the problem.</>
             ) : (
-              <>
-                Your practice.
-                <br />
-                <em>Your questions.</em>
-              </>
+              <>What would you like to know?</>
             )}
           </h2>
           <p>

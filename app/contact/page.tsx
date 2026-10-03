@@ -28,14 +28,10 @@ export default function ContactPage() {
           <span aria-current="page">Contact</span>
         </nav>
         <p className={b.eyebrow}>LET’S FIND A STARTING POINT</p>
-        <h1 id="contact-title">
-          A question is
-          <br />
-          <em>enough to begin.</em>
-        </h1>
+        <h1 id="contact-title">What do you have in mind?</h1>
         <p className={c.introduction}>
-          You do not need a finished brief or a perfectly defined practice goal.
-          Tell us what you have in mind, and what you would like to understand.
+          An early idea or a question is enough. Tell us what you need help
+          with; you do not need a finished brief.
         </p>
       </section>
       <section className={c.conversation} aria-labelledby="conversation-title">

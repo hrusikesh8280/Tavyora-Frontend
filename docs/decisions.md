@@ -154,3 +154,11 @@ Checkpoint: `pre-final-polish-v1`; branch `production/final-polish`. Approved ar
 - Keep the persistent Motion Pause control absent: no indefinite decorative animation was found. Entrances, scroll responses and selected scenes settle; reduced-motion support remains. Wellbeing rhythm timings and deliberate activation are unchanged. Hero/pause contours are finite 4.4/4.8-second entrances, not loops.
 - Favicon colours now use current ink/bone. Homepage factual schema adds WebSite alongside Organization. Seven canonical production URLs remain on https://tavyora.com.
 - This is local review readiness, not legal approval or deployment authorisation. Authentic photography remains a future improvement under the revised owner-authorised editorial strategy.
+
+## V1.1 final identity and human craft
+
+- Approved Homepage Product System/control points and Technology visual storytelling remain locked. No new sections, routes or motion systems.
+- Retain Inter + IBM Plex Serif after identical-content visual comparison. Reduce repeated italic second lines rather than replacing production fonts. Alternative fonts remain review-only.
+- Use stable `app/icon.png` (96px) and `app/apple-icon.png` (180px). Remove automatic `app/icon.svg` to keep one primary icon reference.
+- Render same-subject wellbeing scenes as warm editorial ink studies; preserve assets, composition, deliberate selection and motion timing. They do not represent the practitioner or customers. Provenance stays in docs/assets.md.
+- Preserve production SEO configuration, canonical hostname, navigation and approved interactions. No merge or deployment is part of this pass.

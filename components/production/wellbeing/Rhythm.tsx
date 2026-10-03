@@ -180,6 +180,17 @@ export function Rhythm() {
           >
             <svg className={s.apertureDefinition} aria-hidden="true">
               <defs>
+                {/* Sixteen warm ink values turn source photography into a print study.
+                    Geometry, source bytes and state choreography are unchanged. */}
+                <filter id={`${apertureId}-ink`} colorInterpolationFilters="sRGB">
+                  <feColorMatrix type="saturate" values="0" />
+                  <feComponentTransfer>
+                    <feFuncR type="discrete" tableValues="0.190 0.241 0.292 0.343 0.393 0.444 0.495 0.546 0.597 0.648 0.699 0.750 0.800 0.851 0.902 0.953" />
+                    <feFuncG type="discrete" tableValues="0.210 0.258 0.307 0.355 0.404 0.452 0.501 0.549 0.598 0.646 0.695 0.743 0.792 0.840 0.889 0.937" />
+                    <feFuncB type="discrete" tableValues="0.200 0.247 0.294 0.340 0.387 0.434 0.481 0.528 0.574 0.621 0.668 0.715 0.762 0.808 0.855 0.902" />
+                  </feComponentTransfer>
+                  <feGaussianBlur stdDeviation="0.32" />
+                </filter>
                 <clipPath id={apertureId} clipPathUnits="objectBoundingBox">
                   <path d="M.04 .02 L.65 .02 C.85 .02 .98 .16 .98 .38 L.98 .98 L.34 .98 C.14 .98 .04 .88 .04 .68 Z" />
                 </clipPath>
@@ -219,6 +230,7 @@ export function Rhythm() {
                 >
                   <Image
                     loader={figureLoader}
+                    style={{ filter: `url(#${apertureId}-ink)` }}
                     src={`/images/session-study/${figures[i].name}-1024.webp`}
                     width={1024}
                     height={1024}

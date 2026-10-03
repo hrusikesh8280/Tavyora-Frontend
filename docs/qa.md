@@ -38,3 +38,23 @@ Complete final-review.md on real devices: native 200% zoom, screen reader readin
 One simulated-mobile Wellbeing run: Performance 93, Accessibility 100, Best Practices 100, SEO 100. LCP 2.926 s, CLS 0, total transfer 290,916 bytes; no run warnings. LCP remains above the 2.5 s target by about 0.43 s. No rerun or optimisation loop. This is one local lab result, not a median, matched before/after experiment or field INP measurement. Historical accepted LCP was approximately 2.60–2.90 s, so this does not demonstrate an improvement. Image source bytes did not increase. Raw report was reviewed; compact results are in archive/final-polish-lighthouse.json. Heavy raw artifacts are excluded from the clean source ZIP.
 
 LCP element: italic hero text “with room to notice.” The report attributes 84% to render delay and 16% to simulated TTFB. Observed resources: 150,432B scripts,69,720B fonts,39,252B images,19,926B stylesheets,11,586B document; no third-party requests in this run. TBT 170 ms is a lab measure, not field INP. No additional performance intervention was made.
+
+## V1.1 final identity / human craft pass
+
+Local Chromium against the production static export. Runtime provides npm, not Bun; the unchanged package scripts were invoked with npm.
+
+- `npm run lint`: passed.
+- `npm run typecheck`: passed.
+- `npm run build`: passed, seven content routes plus branded not-found and PNG icon assets.
+- `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/tmp/tavyora-chromium node scripts/check-identity-craft.mjs`: passed.
+- Eight page experiences at 1440 and 390px: single H1, no horizontal overflow, correct icon references, canonical host, no public admin email/development labels, no page errors.
+- Axe WCAG 2 A/AA, 2.1 AA and 2.2 AA tags: zero violations across 16 route/viewport scans.
+- Keyboard activation and selected state checked on Home and Contact; touch path checked at 390px. Home reduced-motion selection settles without running animations. Four Wellbeing figures load and expose descriptive alt text.
+- All eight routes pass 720px CSS reflow, an equivalent-width check for 200% desktop zoom. Actual browser zoom and screen-reader reading remain manual checks.
+- Additional 768px reflow spot check passed. Screenshot capture scrolls lazy images into view before capture; blank offscreen lazy images were a capture issue, not a broken source image.
+- Typography A/B/C: measured identical content/layout, desktop + 390px specimen, no overflow. Measurements and screenshots in the handoff review folder.
+- Verified no source diff in SEO lib, layout metadata, sitemap, robots, approved enhancement visual components, navigation, package/lockfiles or image source files.
+
+Initial build needed removal of stale generated `.next`/`out` references to the retired SVG icon. A browser run initially lacked the default Chromium binary and was rerun with the available executable. Both environment issues were resolved. The final result above follows the final sixteen-tone figure treatment.
+
+No Lighthouse was run in this pass; no new score, LCP or field-performance claim is made. No production font/image payload increase, framework upgrade or new dependency. The lightweight SVG print filter needs a real low-end-device paint check before release. No deployment or merge.

@@ -88,9 +88,9 @@ const sections: LegalSection[] = [
     content: (
       <>
         <p>
-          The current website does not intentionally include production
-          analytics, advertising trackers or marketing cookies. It does not
-          offer user accounts or use a booking or payment system.
+          The current website does not intentionally include analytics,
+          advertising trackers or marketing cookies. It does not offer user
+          accounts or use a booking or payment system.
         </p>
         <p>
           This describes the current website, not a promise that its features

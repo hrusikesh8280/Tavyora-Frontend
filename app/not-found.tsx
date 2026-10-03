@@ -11,8 +11,7 @@ export default function NotFound() {
           The signal ends <em>here.</em>
         </h1>
         <p className={s.copy}>
-          The page may have moved, changed, or never existed. There are other
-          paths into Tavyora.
+          This address does not lead to a page. Try one of the links below.
         </p>
         <svg
           className={s.signal}

@@ -98,3 +98,15 @@ Automated checks support this checklist; they do not replace owner review, nativ
 - [ ] Complete legal-review.md, hosting/logging decisions and asset-rights approval.
 - [ ] Accept documented lab performance gaps and review on the future preview host.
 - [ ] Preserve Zoho MX/SPF/DKIM if deployment is separately authorised later.
+
+## V1.1 identity / craft review before release
+
+- [ ] Approve the 16/24/32/48px geometric t and 96/180px raster source assets.
+- [ ] Review A/B/C actual specimens; current Inter + Plex Serif is retained, not silently replaced.
+- [ ] Review direct supporting headings on all public pages and confirm retained qualification wording.
+- [ ] Approve the same-subject wellbeing print studies as non-identity editorial art; review source rights and future authentic replacements in assets.md.
+- [ ] Check the SVG ink filter and deliberate state transitions on real iOS Safari and a lower-end Android device.
+- [ ] Perform actual browser 200% zoom and assistive-technology reading checks; automated equivalent-width reflow is supplementary.
+- [ ] Verify hello@ delivery and local email-app handoff; no backend sending is implemented.
+- [ ] Complete outstanding legal/privacy owner review in legal-review.md.
+- [ ] Keep this enhancement branch separate until approval. Do not infer that automated QA authorizes deployment.

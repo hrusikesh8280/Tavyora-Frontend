@@ -1555,7 +1555,7 @@
 /* Editorial figure studies: static print treatment, not practitioner portraits.
    Existing WebP sources, responsive loader and timing remain unchanged. */
 .figureLayer img {
-  filter: grayscale(1) sepia(0.22) saturate(0.55) contrast(0.9);
+  /* Eight-tone warm ink filter is scoped to this Rhythm instance. */
   mix-blend-mode: multiply;
 }
 .figureAperture {
@@ -1577,7 +1577,7 @@
   pointer-events: none;
   background-image: radial-gradient(var(--ink) 0.45px, transparent 0.6px);
   background-size: 4px 4px;
-  opacity: 0.045;
+  opacity: 0.11;
 }
 .imageFrame img,
 .heroMaterial img {
